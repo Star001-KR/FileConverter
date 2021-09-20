@@ -1,0 +1,17 @@
+{
+    "mac": 
+    {
+        "excelDirectory": "Data/ExcelData/",
+        "jsonDirectory": "Data/JsonData/",
+        "gameConfigDirectory": "Config/",
+        "validationDirectory": "Config/"
+    },
+
+    "windows": 
+    {
+        "excelDirectory": "Data\\ExcelData\\",
+        "jsonDirectory": "Data\\JsonData\\",
+        "gameConfigDirectory": "Config\\",
+        "validationDirectory": "Config\\"
+    }
+}
