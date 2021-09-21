@@ -8,20 +8,7 @@ class EDirectory(Enum):
     validationDirectory = auto()
 
 
-class Directory:
-    def __init__(self):
-        pass
-
-
-    def Get_Directory(self):
-        pass
-
-
-    def Set_Directory(self):
-        pass
-
-
-class FileConverterDirectory(Directory):
+class FileConverterDirectory():
     directoryDic = {}
 
     def __init__(self, directoryType, filePath):
@@ -38,8 +25,6 @@ class FileConverterDirectory(Directory):
         pass
 
 
-def Init_Directory():
-    
-
-    while (True):
-        yield
+    @classmethod
+    def Get_DirectoryDic(cls):
+        return cls.directoryDic
