@@ -16,13 +16,21 @@ class FileConverterDirectory():
 
 
     @classmethod
-    def Init_Directory(cls):
-        pass
+    def Set_Directory(cls, directoryType, filePath):
+        if not directoryType in cls.directoryDic.keys:
+            return 'err : wrong directory type input. (key exist err)'
+
+        else:
+            cls.directoryDic[directoryType] = filePath
 
 
     @classmethod
-    def Set_Directory(cls):
-        pass
+    def Del_Directory(cls, directoryType):
+        if not directoryType in cls.directoryDic.keys:
+            return 'err : wrong directory type input. (key exist err)'
+        
+        else:
+            del cls.directoryDic[directoryType]
 
 
     @classmethod

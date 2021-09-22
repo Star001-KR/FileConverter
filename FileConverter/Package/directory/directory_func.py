@@ -4,7 +4,7 @@ import json
 import platform
 import glob
 
-def Create_Directory():
+def Init_Directory():
     FileConverterDirectory(EDirectory.excelDirectory, Get_PathFromJson('excelDirectory'))
     FileConverterDirectory(EDirectory.allExcelDirectory, glob.glob('{0}*.xlsx'.format(Get_DirectoryDic()[EDirectory.excelDirectory])))
     FileConverterDirectory(EDirectory.jsonDirectory, Get_PathFromJson('jsonDirectory'))
@@ -12,8 +12,16 @@ def Create_Directory():
     FileConverterDirectory(EDirectory.validationDirectory, Get_PathFromJson('validationDirectory'))
 
 
-def Init_Directory():
-    FileConverterDirectory.Init_Directory()
+def Add_Directory(directoryType, filePath):
+    if not directoryType in Get_DirectoryDic().keys:
+        return 'err : wrong directory type input. (input key already)'
+
+    else:
+        FileConverterDirectory(directoryType, filePath)
+
+
+def Del_Directory(directoryType):
+    FileConverterDirectory.Del_Directory(directoryType)
 
 
 def Get_DirectoryDic():
@@ -22,7 +30,7 @@ def Get_DirectoryDic():
 
 def Get_PathFromJson(directoryType):
     isMac = (platform.system() == "Darwin") and True or False
-    jsonPath = (isMac) and 'FileConverter/Package/directory/directory.json' or 'FileConverter\\Package\\directory\\directory.json'
+    jsonPath = (isMac) and 'Config/directory.json' or 'Config\\directory.json'
 
     try:
         with open (jsonPath) as file:

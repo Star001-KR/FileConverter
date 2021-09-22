@@ -2,5 +2,5 @@
 
 from Package.directory.directory_func import *
 
-Create_Directory()
+Init_Directory()
 print(Get_DirectoryDic())
