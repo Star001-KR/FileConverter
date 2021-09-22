@@ -1,5 +1,5 @@
 from json.decoder import JSONDecodeError
-from Package.directory.directory import *
+from Package.Directory.directory import *
 import json
 import platform
 import glob
@@ -26,6 +26,16 @@ def Del_Directory(directoryType):
 
 def Get_DirectoryDic():
     return FileConverterDirectory.Get_DirectoryDic()
+
+
+def Get_DirectoryByType(directoryType):
+    _directoryDic = FileConverterDirectory.Get_DirectoryDic()
+
+    if not directoryType in _directoryDic.keys:
+        return 'err : wrong directory type input. (key exist err)'
+
+    else:
+        return _directoryDic[directoryType]
 
 
 def Get_PathFromJson(directoryType):
