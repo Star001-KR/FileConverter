@@ -10,7 +10,9 @@ def Init_Directory():
     FileConverterDirectory(EDirectory.jsonDirectory, Get_PathFromJson('jsonDirectory'))
     FileConverterDirectory(EDirectory.gameConfigDirectory, Get_PathFromJson('gameConfigDirectory'))
     FileConverterDirectory(EDirectory.validationDirectory, Get_PathFromJson('validationDirectory'))
-
+    FileConverterDirectory(EDirectory.logs, Get_PathFromJson('logs'))
+    print('here')
+    
 
 def Add_Directory(directoryType, filePath):
     if not directoryType in Get_DirectoryDic().keys:
@@ -31,7 +33,7 @@ def Get_DirectoryDic():
 def Get_DirectoryByType(directoryType):
     _directoryDic = FileConverterDirectory.Get_DirectoryDic()
 
-    if not directoryType in _directoryDic.keys:
+    if not directoryType in _directoryDic.keys():
         return 'err : wrong directory type input. (key exist err)'
 
     else:

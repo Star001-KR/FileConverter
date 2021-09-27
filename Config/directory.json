@@ -4,7 +4,8 @@
         "excelDirectory": "Data/ExcelData/",
         "jsonDirectory": "Data/JsonData/",
         "gameConfigDirectory": "Config/",
-        "validationDirectory": "Config/"
+        "validationDirectory": "Config/",
+        "logs": "Logs/"
     },
 
     "windows": 
@@ -12,6 +13,7 @@
         "excelDirectory": "Data\\ExcelData\\",
         "jsonDirectory": "Data\\JsonData\\",
         "gameConfigDirectory": "Config\\",
-        "validationDirectory": "Config\\"
+        "validationDirectory": "Config\\",
+        "logs": "Logs\\"
     }
 }

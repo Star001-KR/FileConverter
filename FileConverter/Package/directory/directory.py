@@ -6,6 +6,7 @@ class EDirectory(Enum):
     jsonDirectory = auto()
     gameConfigDirectory = auto()
     validationDirectory = auto()
+    logs = auto()
 
 
 class FileConverterDirectory():
