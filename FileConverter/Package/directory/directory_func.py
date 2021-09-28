@@ -11,7 +11,6 @@ def Init_Directory():
     FileConverterDirectory(EDirectory.gameConfigDirectory, Get_PathFromJson('gameConfigDirectory'))
     FileConverterDirectory(EDirectory.validationDirectory, Get_PathFromJson('validationDirectory'))
     FileConverterDirectory(EDirectory.logs, Get_PathFromJson('logs'))
-    print('here')
     
 
 def Add_Directory(directoryType, filePath):
