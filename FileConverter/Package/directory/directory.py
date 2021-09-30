@@ -18,13 +18,13 @@ class FileConverterDirectory():
 
     @classmethod
     def Set_Directory(cls, directoryType, filePath):
-        assert (not directoryType in cls.directoryDic.keys), 'err : wrong directory type input. (key exist err)'
+        assert (directoryType in cls.directoryDic.keys), 'err : wrong directory type input. (key exist err)'
         cls.directoryDic[directoryType] = filePath
 
 
     @classmethod
     def Del_Directory(cls, directoryType):
-        assert (not directoryType in cls.directoryDic.keys), 'err : wrong directory type input. (key exist err)'
+        assert (directoryType in cls.directoryDic.keys), 'err : wrong directory type input. (key exist err)'
         del cls.directoryDic[directoryType]
 
 

@@ -14,11 +14,9 @@ def Init_Directory():
     
 
 def Add_Directory(directoryType, filePath):
-    if not type(directoryType) == EDirectory:
-        return 'err : wrong directory type input. (input key already)'
-
-    else:
-        FileConverterDirectory(directoryType, filePath)
+    assert (type(directoryType) == EDirectory), 'err : wrong directory type input. (input key already)'
+    
+    FileConverterDirectory(directoryType, filePath)
 
 
 def Del_Directory(directoryType):
@@ -32,11 +30,9 @@ def Get_DirectoryDic():
 def Get_DirectoryByType(directoryType):
     _directoryDic = FileConverterDirectory.Get_DirectoryDic()
 
-    if not directoryType in _directoryDic.keys():
-        return 'err : wrong directory type input. (key exist err)'
-
-    else:
-        return _directoryDic[directoryType]
+    assert (directoryType in _directoryDic.keys()), 'err : wrong directory type input. (key exist err)'
+    
+    return _directoryDic[directoryType]
 
 
 def Get_PathFromJson(directoryType):
@@ -49,10 +45,10 @@ def Get_PathFromJson(directoryType):
             directorySet = (isMac) and file_json['mac'] or file_json['windows']
 
     except JSONDecodeError:
-        return 'err : json file error'
+        assert (False), 'err : json file error'
     
     for key in directorySet:
         if key == directoryType:
             return directorySet[key]
 
-    return 'err : input wrong directory type.'
+    assert (False), 'err : input wrong directory type.'
