@@ -1,5 +1,6 @@
 from Package.Directory.directory_func import *
 from Package.Debug.Error import *
+from enum import Enum, auto
 import time
 import os
 
@@ -10,44 +11,59 @@ class ELogTpye(Enum):
 
 
 class Log():
+    logName = []
+    logLine = 0
+
     def __init__(self):
         self._logFileName = 'log_' + time.strftime('%Y_%m_%d_%H:%M:%S', time.localtime(time.time())) + '.txt'
         self._logFullDirectory = Get_DirectoryByType(EDirectory.logs) + self._logFileName
         
-        with open(self._logFullDirectory, 'w'):
-            pass
-
-        self._logLine = 1
-
-
-    def Write_Log(self, logType, logContent):
         try:
-            if (not type(logType) == ELogTpye) | (not type(logContent) == str):
-                raise ParamDataTypeError
+            with open(self._logFullDirectory, 'w'):
+                pass
 
-        
-            if logType == ELogTpye.normal:
-                _logStr = ' '
+        except FileNotFoundError:
+            self._logFullDirectory = self._logFileName
 
-            elif logType == ELogTpye.error:
-                _logStr = '*'
+            with open(self._logFullDirectory, 'w'):
+                pass
 
-            elif logType == ELogTpye.warning:
-                _logStr = '>'
+        self.Init_LogLine()
+
+        if not len(self.logName):
+            self.logName.clear
+
+        self.logName.append(self._logFileName)
+        self.logName.append(self._logFullDirectory)
+
+
+    @classmethod
+    def Init_LogLine(cls):
+        cls.logLine = 0
+
+
+    @classmethod
+    def Push_LogLine(cls):
+        cls.logLine += 1
+        return cls.logLine
+
+
+    @classmethod
+    def Is_LogFileName(cls):
+        return (len(cls.logName)) and True or False
+
+
+    @classmethod
+    def Get_LogFullName(cls):
+        try:
+            if cls.Is_LogFileName():
+                return cls.logName[1]
 
             else:
-                _logStr = '?'
-
-        except ParamDataTypeError:
-            pass
-
-
-    def Del_LogFile(self):
-        os.remove(self._logFullDirectory)
-
-
-    def Get_LogFullDirectory(self):
-        return self._logFullDirectory
+                raise FileNameNotInitError
+    
+        except FileNameNotInitError:
+            return 'TEMP_LOG'
 
 
     def __del__(self):

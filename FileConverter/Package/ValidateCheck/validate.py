@@ -1,5 +1,6 @@
 from Package.Directory.directory_func import *
 from Package.Debug.Error import *
+from Package.Debug.log_func import *
 import openpyxl
 import yaml
 
@@ -18,6 +19,7 @@ class NormalValidate(Validate):
 class ConfigValidate(Validate):
     def __init__(self):
         super().__init__()
+        Write_Log(ELogTpye.error, 'afd')
 
 
 def Get_ExcelDataToLib(directoryList, targetSheetName):

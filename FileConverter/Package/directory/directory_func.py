@@ -14,7 +14,7 @@ def Init_Directory():
     
 
 def Add_Directory(directoryType, filePath):
-    if not directoryType in Get_DirectoryDic().keys:
+    if not type(directoryType) == EDirectory:
         return 'err : wrong directory type input. (input key already)'
 
     else:
