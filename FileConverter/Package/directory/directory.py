@@ -31,3 +31,10 @@ class FileConverterDirectory():
     @classmethod
     def Get_DirectoryDic(cls):
         return cls.directoryDic
+
+
+    @classmethod
+    def Is_InitDirectoryType(cls, directoryType):
+        assert type(directoryType) == EDirectory, 'err : wrong directory type input.'
+
+        return (directoryType in cls.directoryDic.keys()) and True or False

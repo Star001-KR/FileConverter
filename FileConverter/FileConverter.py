@@ -6,11 +6,14 @@ from Package.ValidateCheck.validate import *
 
 
 def Init_Tool():
-    Init_Directory()
     Init_Log(False)
+    
+    Write_Log(ELogTpye.normal, 'Init Directory, Log.')
+    
 
-    Write_Log(ELogTpye.normal, 'Init Tool.')
-
+@deco_usedirmethod([EDirectory.excelDirectory, EDirectory.jsonDirectory])
+def test ():
+    print(test)
 
 if __name__ == '__main__':
     Init_Tool()

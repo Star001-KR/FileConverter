@@ -11,13 +11,14 @@ class ELogTpye(Enum):
 
 
 class Log():
+    logDirectory = ''
     logName = []
     logLine = 0
-
+    
     def __init__(self):
         self._logFileName = 'log_' + time.strftime('%Y_%m_%d_%H:%M:%S', time.localtime(time.time())) + '.txt'
-        self._logFullDirectory = Get_DirectoryByType(EDirectory.logs) + self._logFileName
-        
+        self._logFullDirectory = self.Init_LogDirectory() + self._logFileName
+
         try:
             with open(self._logFullDirectory, 'w'):
                 pass
@@ -35,6 +36,12 @@ class Log():
 
         self.logName.append(self._logFileName)
         self.logName.append(self._logFullDirectory)
+
+
+    @deco_usedirmethod(EDirectory.logs)
+    def Init_LogDirectory(self, directory):
+        self.logDirectory = directory
+        return self.logDirectory
 
 
     @classmethod
