@@ -11,9 +11,5 @@ def Init_Tool():
     Write_Log(ELogTpye.normal, 'Init Directory, Log.')
     
 
-@deco_usedirmethod([EDirectory.excelDirectory, EDirectory.jsonDirectory])
-def test ():
-    print(test)
-
 if __name__ == '__main__':
     Init_Tool()

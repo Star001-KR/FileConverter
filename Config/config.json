@@ -1,0 +1,8 @@
+{
+    "excel": 
+    {
+        "targetSheetName": "Sheet1",
+        "columnNameNum": 0,
+        "keyColumnName": "ID"
+    }
+}

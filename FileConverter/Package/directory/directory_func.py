@@ -1,4 +1,3 @@
-from json.decoder import JSONDecodeError
 from Package.Directory.directory import *
 import json
 import platform
@@ -64,13 +63,9 @@ def Get_PathFromJson(directoryType):
     isMac = (platform.system() == "Darwin") and True or False
     jsonPath = (isMac) and 'Config/directory.json' or 'Config\\directory.json'
 
-    try:
-        with open (jsonPath) as file:
-            file_json = json.load(file)
-            directorySet = (isMac) and file_json['mac'] or file_json['windows']
-
-    except JSONDecodeError:
-        assert (False), 'err : json file error'
+    with open (jsonPath) as file:
+        file_json = json.load(file)
+        directorySet = (isMac) and file_json['mac'] or file_json['windows']
     
     for key in directorySet:
         if key == directoryType:
