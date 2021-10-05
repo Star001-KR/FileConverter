@@ -1,7 +1,6 @@
 from Package.Directory.directory import *
 import json
 import platform
-import glob
 
 def deco_usedirmethod(directoryType):
     assert (type(directoryType) == EDirectory) or (type(directoryType) == list), 'err : wrong data type input.'
@@ -11,9 +10,6 @@ def deco_usedirmethod(directoryType):
     def appear_dirList(dirType):
         if not FileConverterDirectory.Is_InitDirectoryType(dirType):
             FileConverterDirectory(dirType, Get_PathFromJson(str(dirType).split('.')[1]))
-
-            if dirType == EDirectory.excelDirectory:
-                FileConverterDirectory(EDirectory.allExcelDirectory, glob.glob('{0}*.xlsx'.format(Get_DirectoryDic()[EDirectory.excelDirectory])))
 
         _dirList.append(Get_DirectoryByType(dirType))
 

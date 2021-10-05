@@ -2,7 +2,6 @@ from enum import Enum, auto
 
 class EDirectory(Enum):
     excelDirectory = auto()
-    allExcelDirectory = auto()
     jsonDirectory = auto()
     gameConfigDirectory = auto()
     validationDirectory = auto()
