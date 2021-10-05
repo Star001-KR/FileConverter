@@ -50,12 +50,22 @@ class Validate():
             _excelDataDict = get_excelSheetDataDict(excelDir, self._targetSheetName)
 
             if not _excelDataDict:
-                Write_Log(ELogTpye.warning, f'continue push [ {_excelName} ] excel data.')
+                Write_Log(ELogTpye.warning, f'warning : continue push [ {_excelName} ] excel data.')
                 continue
 
             _allExcelDataDict[_excelName] = _excelDataDict
 
         return _allExcelDataDict
+
+
+    def Get_ExcelValue(self, excelName, rowNum, colNum):
+        assert (type(excelName) == str), 'err : wrong param data type input.'
+        if not (excelName in self._allExcelDataDict.keys()):
+            assert (False), 'err : wrong param input. (no excel name in all excel data names.)'
+
+        _excelData = self._allExcelDataDict[excelName]
+        
+        return _excelData[rowNum][colNum].value
                 
         
 class NormalValidate(Validate):

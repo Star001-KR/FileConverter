@@ -13,3 +13,6 @@ def Init_Tool():
 
 if __name__ == '__main__':
     Init_Tool()
+    test = Validate()
+
+    print(test.Get_ExcelValue('Monster', 0, 5))
