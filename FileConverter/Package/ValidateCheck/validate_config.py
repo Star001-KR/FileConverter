@@ -6,9 +6,15 @@ class ConfigValidate(Validate):
         super().__init__()
 
 
-    def Check_RefValue():
-        pass
+    @deco_validatelog
+    def Check_RefValue(self, *checkDataList):
+        _errCount = 0
+
+        return _errCount
 
 
-    def Check_ValueSizeCompare():
-        pass
+    @deco_validatelog
+    def Check_ValueSizeCompare(self, *checkDataList):
+        _errCount = 0
+
+        return _errCount
