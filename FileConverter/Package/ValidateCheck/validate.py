@@ -1,9 +1,7 @@
 from Package.Directory.directory_func import *
 from Package.Debug.Error import *
 from Package.Debug.log_func import *
-import enum
 import openpyxl
-import yaml
 import glob
 import os
 
@@ -57,7 +55,7 @@ class Validate():
 
         return _allExcelDataDict
 
-
+        
     def Get_ExcelValue(self, excelName, rowNum, colNum):
         assert (type(excelName) == str), 'err : wrong param data type input.'
         if not (excelName in self._allExcelDataDict.keys()):
@@ -66,16 +64,6 @@ class Validate():
         _excelData = self._allExcelDataDict[excelName]
         
         return _excelData[rowNum][colNum].value
-                
-        
-class NormalValidate(Validate):
-    def __init__(self):
-        super().__init__()
-
-
-class ConfigValidate(Validate):
-    def __init__(self):
-        super().__init__()
 
 
 def Get_ConfigFromJson(configType, configCategory):
