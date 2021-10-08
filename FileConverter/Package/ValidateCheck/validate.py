@@ -1,13 +1,10 @@
 from Package.Directory.directory_func import *
 from Package.Debug.Error import *
 from Package.Debug.log_func import *
+from Package.Config.config import *
 import openpyxl
 import glob
 import os
-
-class EConfigType(Enum):
-    excel = auto()
-
 
 class Validate():
     def __init__(self):
@@ -55,7 +52,23 @@ class Validate():
 
         return _allExcelDataDict
 
+
+    def Get_ColumnNameNum(self):
+        return self._columnNameNum
+
+
+    def Get_KeyColomnName(self):
+        return self._keyColumnName
+
+
+    def Get_ExcelData(self, excelName):
+        assert (type(excelName) == str), 'err : wrong param data type input.'
+        if not (excelName in self._allExcelDataDict.keys()):
+            assert (False), 'err : wrong param input. (no excel name in all excel data names.)'
         
+        return self._allExcelDataDict[excelName]
+
+
     def Get_ExcelValue(self, excelName, rowNum, colNum):
         assert (type(excelName) == str), 'err : wrong param data type input.'
         if not (excelName in self._allExcelDataDict.keys()):
@@ -66,23 +79,11 @@ class Validate():
         return _excelData[rowNum][colNum].value
 
 
-def Get_ConfigFromJson(configType, configCategory):
-    assert (type(configType) == EConfigType), 'err : wrong param data type input.'
-    if configType == EConfigType.excel:
-        _configTypeName = 'excel'
-
-    isMac = (platform.system() == "Darwin") and True or False
-    jsonPath = (isMac) and 'Config/config.json' or 'Config\\config.json'
-    
-    with open (jsonPath) as file:
-        file_json = json.load(file)
-        configSet = file_json[_configTypeName]
-
-    for config in configSet:
-        if config == configCategory:
-            return configSet[config]
-
-    assert (False), 'err : input wrong config category.'
+    def Get_CheckDataList(self, *checkDataList):
+        if not len(checkDataList):
+            return self._allExcelDataDict.keys()
+            
+        return checkDataList
 
 
 def deco_validatelog(validate_func):
@@ -112,5 +113,4 @@ def deco_validatelog(validate_func):
         _errCount = validate_func(self, *checkDataList)
 
         Write_EndLog(_checkTypeName, _errCount)
-
     return wrap
