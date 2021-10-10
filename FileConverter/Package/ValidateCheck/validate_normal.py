@@ -1,4 +1,5 @@
 from Package.ValidateCheck.validate import *
+import asyncio
 
 class EColumnProperty(Enum):
     design = auto()
@@ -14,14 +15,42 @@ class NormalValidate(Validate):
 
     @deco_validatelog
     def Check_KeyDuplicate(self, *checkDataList):
-        _checkDataList = self.Get_CheckDataList(*checkDataList)
-        _errCount = 0
-        # 재귀함수 이용
-        # for dataName in _checkDataList:
-        #     for data in range(0, )
-        #     pass
+        async def check_validate(dataName):
+            _valueList = []
+            _errCount = 0
+            
+            _loopCount = 0
+            for rowNum in range(2, self.Get_LenExcelRows(dataName) - 2):
+                _value = self.Get_ExcelValue(dataName, rowNum, self.Get_KeyColumnNum(dataName))
+                _loopCount += 1
 
-        return _errCount
+                if _value in _valueList:
+                    Write_Log(ELogTpye.error, f'Key Duplicate : {dataName} - Row : {_loopCount}')
+                    _errCount += 1
+                    
+                    continue
+
+                _valueList.append(_value)
+
+            return _errCount
+
+        async def main_loop(checkList):
+            _futures = [asyncio.ensure_future(check_validate(_dataName)) for _dataName in checkList]
+            _result = await asyncio.gather(*_futures)
+            
+            _allErrCount = 0
+            for errCount in _result:
+                _allErrCount += errCount
+
+            return _allErrCount
+
+        _checkDataList = self.Get_CheckDataList(*checkDataList)
+
+        loop = asyncio.get_event_loop()
+        _allErrCount = loop.run_until_complete(main_loop(_checkDataList))
+        loop.close()
+
+        return _allErrCount
 
 
     @deco_validatelog
@@ -48,7 +77,7 @@ class NormalValidate(Validate):
         return _errCount
 
 
-    def __Get_KeyColumnNum(self, dataName):
+    def Get_KeyColumnNum(self, dataName):
         _targetData = self.Get_ExcelData(dataName)
         _columnNum = 0
 

@@ -81,9 +81,15 @@ class Validate():
 
     def Get_CheckDataList(self, *checkDataList):
         if not len(checkDataList):
-            return self._allExcelDataDict.keys()
+            _dataNameList = [dataName for dataName in self._allExcelDataDict.keys()]
+
+            return _dataNameList
             
         return checkDataList
+
+
+    def Get_LenExcelRows(self, excelName):
+        return len(self.Get_ExcelData(excelName).keys())
 
 
 def deco_validatelog(validate_func):

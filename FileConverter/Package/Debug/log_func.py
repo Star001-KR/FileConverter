@@ -20,19 +20,19 @@ def Write_Log(logType, logContent):
     
     # prefix string.
     if logType == ELogTpye.normal:
-        _logStr = '  {0}\t\t\t|\t{1}\t|\t'.format(Log.Push_LogLine(), 
+        _logStr = '  {0:<6}\t|\t{1}\t|\t'.format(Log.Push_LogLine(), 
         time.strftime('%H:%M:%S', time.localtime(time.time())))
 
     elif logType == ELogTpye.error:
-        _logStr = '* {0}\t\t\t|\t{1}\t|\t'.format(Log.Push_LogLine(), 
+        _logStr = '* {0:<6}\t|\t{1}\t|\t'.format(Log.Push_LogLine(), 
         time.strftime('%H:%M:%S', time.localtime(time.time())))
 
     elif logType == ELogTpye.warning:
-        _logStr = '> {0}\t\t\t|\t{1}\t|\t'.format(Log.Push_LogLine(), 
+        _logStr = '> {0:<6}\t|\t{1}\t|\t'.format(Log.Push_LogLine(), 
         time.strftime('%H:%M:%S', time.localtime(time.time())))
 
     else:
-        _logStr = '? {0}\t\t\t|\t{1}\t|\t'.format(Log.Push_LogLine(), 
+        _logStr = '? {0:<6}\t|\t{1}\t|\t'.format(Log.Push_LogLine(), 
         time.strftime('%H:%M:%S', time.localtime(time.time())))
 
     _logStr = _logStr + logContent
