@@ -1,5 +1,5 @@
 from Package.ValidateCheck.validate import *
-import json
+from Package.ValidateCheck.decorator import *
 
 class ConfigValidate(Validate):
     def __init__(self):

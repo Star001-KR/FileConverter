@@ -1,5 +1,5 @@
 from Package.ValidateCheck.validate import *
-import asyncio
+from Package.ValidateCheck.decorator import *
 
 class EColumnProperty(Enum):
     design = auto()
