@@ -5,6 +5,7 @@ from Package.Config.config import *
 import openpyxl
 import glob
 import os
+import asyncio
 
 class Validate():
     def __init__(self):
@@ -62,7 +63,7 @@ class Validate():
 
 
     def Get_ExcelData(self, excelName):
-        assert (type(excelName) == str), 'err : wrong param data type input.'
+        assert (type(excelName) == str), f'err : wrong param data type input. ({type(excelName)})'
         if not (excelName in self._allExcelDataDict.keys()):
             assert (False), 'err : wrong param input. (no excel name in all excel data names.)'
         
@@ -120,3 +121,26 @@ def deco_validatelog(validate_func):
 
         Write_EndLog(_checkTypeName, _errCount)
     return wrap
+
+
+def deco_runvalicheck(*checkDataList):
+    def decorator(validate_func):
+        async def main_loop(checkList):
+            _futures = [asyncio.ensure_future(wrap(_dataName)) for _dataName in checkList[0]]
+            _result = await asyncio.gather(*_futures)
+
+            _allErrCount = 0
+            for errCount in _result:
+                _allErrCount += errCount
+            
+            return _allErrCount
+        
+        def wrap(dataName):
+            return validate_func(dataName)
+            
+        _loop = asyncio.get_event_loop()
+        _allErrCount = _loop.run_until_complete(main_loop(checkDataList))
+        _loop.close
+        
+        return _allErrCount
+    return decorator

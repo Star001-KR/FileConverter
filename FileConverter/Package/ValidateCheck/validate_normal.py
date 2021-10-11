@@ -15,6 +15,7 @@ class NormalValidate(Validate):
 
     @deco_validatelog
     def Check_KeyDuplicate(self, *checkDataList):
+        @deco_runvalicheck(self.Get_CheckDataList(*checkDataList))
         async def check_validate(dataName):
             _valueList = []
             _errCount = 0
@@ -33,25 +34,8 @@ class NormalValidate(Validate):
                 _valueList.append(_value)
 
             return _errCount
-
-        async def main_loop(checkList):
-            _futures = [asyncio.ensure_future(check_validate(_dataName)) for _dataName in checkList]
-            _result = await asyncio.gather(*_futures)
-            
-            _allErrCount = 0
-            for errCount in _result:
-                _allErrCount += errCount
-
-            return _allErrCount
-
-        _checkDataList = self.Get_CheckDataList(*checkDataList)
-
-        loop = asyncio.get_event_loop()
-        _allErrCount = loop.run_until_complete(main_loop(_checkDataList))
-        loop.close()
-
-        return _allErrCount
-
+        return check_validate
+ 
 
     @deco_validatelog
     def Check_ValueEmpty(self, *checkDataList):
