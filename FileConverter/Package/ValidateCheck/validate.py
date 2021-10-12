@@ -10,6 +10,7 @@ class Validate():
     def __init__(self):
         self._targetSheetName = Get_ConfigFromJson(EConfigType.excel, 'targetSheetName')
         self._columnNameNum = Get_ConfigFromJson(EConfigType.excel, 'columnNameNum')
+        self._columnTypeNum = Get_ConfigFromJson(EConfigType.excel, 'columnTypeNum')
         self._keyColumnName = Get_ConfigFromJson(EConfigType.excel, 'keyColumnName')
         
         self._allExcelDataDict = self.Init_DataListFromExcel()
@@ -61,6 +62,27 @@ class Validate():
         return self._keyColumnName
 
 
+    def Get_NotNullableColumnList(self, excelName):
+        assert (type(excelName) == str), f'err : wrong param data type input. ({type(excelName)})'
+        if not (excelName in self._allExcelDataDict.keys()):
+            assert (False), 'err : wrong param input. (no excel name in all excel data names.)'
+
+        _columnList = []
+
+        _columnNum = 0
+        while True:
+            _value = self.Get_ExcelValue(excelName, self._columnTypeNum, _columnNum)
+
+            if not _value:
+                return _columnList
+
+            else:
+                if not _value[len(_value) - 1 : ] == '?':
+                    _columnList.append(_columnNum)
+
+            _columnNum += 1
+
+
     def Get_ExcelData(self, excelName):
         assert (type(excelName) == str), f'err : wrong param data type input. ({type(excelName)})'
         if not (excelName in self._allExcelDataDict.keys()):
@@ -76,7 +98,11 @@ class Validate():
 
         _excelData = self._allExcelDataDict[excelName]
         
-        return _excelData[rowNum][colNum].value
+        try:
+            return _excelData[rowNum][colNum].value
+
+        except:
+            return False
 
 
     def Get_CheckDataList(self, *checkDataList):

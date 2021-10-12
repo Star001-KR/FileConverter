@@ -21,7 +21,7 @@ class NormalValidate(Validate):
             _errCount = 0
             
             _loopCount = 0
-            for rowNum in range(2, self.Get_LenExcelRows(dataName) - 2):
+            for rowNum in range(2, self.Get_LenExcelRows(dataName) - 1):
                 _value = self.Get_ExcelValue(dataName, rowNum, self.Get_KeyColumnNum(dataName))
                 _loopCount += 1
 
@@ -39,10 +39,19 @@ class NormalValidate(Validate):
 
     @deco_validatelog
     def Check_ValueEmpty(self, *checkDataList):
-        _checkDataList = self.Get_CheckDataList(*checkDataList)
-        _errCount = 0
+        @deco_runvalicheck(self.Get_CheckDataList(*checkDataList))
+        async def check_validate(dataName):
+            _notNullableColumnList = self.Get_NotNullableColumnList(dataName)
+            _errCount = 0
 
-        return _errCount
+            for row in range(2, self.Get_LenExcelRows(dataName) - 1):
+                for col in _notNullableColumnList:
+                    if self.Get_ExcelValue(dataName, row, col) == None or self.Get_ExcelValue(dataName, row, col) == '':
+                        Write_Log(ELogTpye.error, f'Empty Value : {dataName} - Row : {row + 1} / Column : {col + 1}')
+                        _errCount += 1
+
+            return _errCount
+        return check_validate
 
 
     @deco_validatelog

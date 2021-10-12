@@ -3,6 +3,7 @@
     {
         "targetSheetName": "Sheet1",
         "columnNameNum": 0,
+        "columnTypeNum" : 1,
         "keyColumnName": "ID"
     }
 }

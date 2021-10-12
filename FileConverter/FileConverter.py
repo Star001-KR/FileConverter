@@ -15,3 +15,4 @@ if __name__ == '__main__':
     a = NormalValidate()
 
     a.Check_KeyDuplicate()
+    a.Check_ValueEmpty()
