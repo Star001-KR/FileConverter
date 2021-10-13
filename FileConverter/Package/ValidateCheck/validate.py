@@ -62,6 +62,10 @@ class Validate():
         return self._keyColumnName
 
 
+    def Get_ColumnTypeNum(self):
+        return self._columnTypeNum
+
+
     def Get_NotNullableColumnList(self, excelName):
         assert (type(excelName) == str), f'err : wrong param data type input. ({type(excelName)})'
         if not (excelName in self._allExcelDataDict.keys()):

@@ -3,6 +3,7 @@ import asyncio
 
 def deco_validatelog(validate_func):
     def Write_StartLog(checkTypeStr):
+        Write_Log(ELogTpye.normal, '----------------------------------------------------------------')
         Write_Log(ELogTpye.normal, f'Start Validate Check : {__CheckType_checkTypeStr(checkTypeStr)}')
 
 

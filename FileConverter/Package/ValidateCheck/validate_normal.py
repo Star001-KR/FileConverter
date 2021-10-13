@@ -9,6 +9,22 @@ class EColumnProperty(Enum):
 
 
 class NormalValidate(Validate):
+    """
+    Validation by excel data table unit (without config.json).
+    
+    Example
+    -------
+    @deco_validatelog
+    def Check_ExampleValiDef(self, *checkDataList):
+        @deco_runvalicheck(self.Get_CheckDataList(*checkDataList))
+        async def check_validate(dataName):
+            _errCount = 0
+
+            # Validate Check Code.
+
+            return _errCount
+        return check_validate
+    """
     def __init__(self):
         super().__init__()
 
@@ -32,7 +48,6 @@ class NormalValidate(Validate):
                     continue
 
                 _valueList.append(_value)
-
             return _errCount
         return check_validate
  
@@ -56,10 +71,41 @@ class NormalValidate(Validate):
 
     @deco_validatelog
     def Check_ValueDataType(self, *checkDataList):
-        _checkDataList = self.Get_CheckDataList(*checkDataList)
-        _errCount = 0
+        @deco_runvalicheck(self.Get_CheckDataList(*checkDataList))
+        async def check_validate(dataName):
+            _dataTypeList = []
+            _notNullableColumnList = self.Get_NotNullableColumnList(dataName)
+            _errCount = 0
 
-        return _errCount
+            _columnNum = 0
+            while True:
+                _typeValue = self.Get_ExcelValue(dataName, self.Get_ColumnTypeNum(), _columnNum)
+
+                if not _typeValue:
+                    break
+
+                _dataTypeList.append(_typeValue)
+                _columnNum += 1
+            
+            for row in range(2, self.Get_LenExcelRows(dataName) - 1):
+                for col in range(0, _columnNum):
+                    _value = self.Get_ExcelValue(dataName, row, col)
+
+                    if _value == None and not col in _notNullableColumnList:
+                        continue
+                    
+                    if _dataTypeList[col].startswith('int'):
+                        if not type(_value) == int:
+                            Write_Log(ELogTpye.error, f'Data Type : {dataName} - Row : {row + 1} / Column : {col + 1}')
+                            _errCount += 1
+
+                    elif _dataTypeList[col].startswith('float'):
+                        if not type(_value) == float and not type(_value) == int:
+                            Write_Log(ELogTpye.error, f'Data Type : {dataName} - Row : {row + 1} / Column : {col + 1}')
+                            _errCount += 1
+
+            return _errCount
+        return check_validate
 
 
     @deco_validatelog
