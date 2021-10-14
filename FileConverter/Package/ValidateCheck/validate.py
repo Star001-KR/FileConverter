@@ -100,19 +100,44 @@ class Validate():
             _value = self.Get_ExcelValue(excelName, self._columnTypeNum, _columnNum)
 
             if not _value:
-                return _columnList
+                break
 
             else:
-                if not _value[len(_value) - 1 : ] == '?':
+                if str(self.Get_ExcelValue(excelName, self.columnNameNum, _columnNum)).startswith('#'):
+                    pass
+
+                elif not str(_value).endswith('?'):
                     _columnList.append(_columnNum)
 
             _columnNum += 1
 
+        return len(_columnList) and _columnList or False
+
 
     def Get_UniqueColumnList(self, excelName):
-        _uniqueColumnList = []
-        
-        return len(_uniqueColumnList) and _uniqueColumnList or False
+        assert (type(excelName) == str), f'err : wrong param data type input. ({type(excelName)})'
+        if not (excelName in self._allExcelDataDict.keys()):
+            assert (False), 'err : wrong param input. (no excel name in all excel data names.)'
+
+        _columnList = []
+
+        _columnNum = 0
+        while True:
+            _value = self.Get_ExcelValue(excelName, self._columnTypeNum, _columnNum)
+
+            if not _value:
+                break
+
+            else:
+                if str(self.Get_ExcelValue(excelName, self.columnNameNum, _columnNum)).startswith('#'):
+                    pass
+
+                elif str(_value).endswith('!'):
+                    _columnList.append(_columnNum)
+
+            _columnNum += 1
+
+        return len(_columnList) and _columnList or False
 
 
     def Get_ExcelData(self, excelName):
