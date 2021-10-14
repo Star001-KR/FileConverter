@@ -79,7 +79,7 @@ class NormalValidate(Validate):
 
             _columnNum = 0
             while True:
-                _typeValue = self.Get_ExcelValue(dataName, self.Get_ColumnTypeNum(), _columnNum)
+                _typeValue = self.Get_ExcelValue(dataName, self.columnTypeNum, _columnNum)
 
                 if not _typeValue:
                     break
@@ -110,21 +110,12 @@ class NormalValidate(Validate):
 
     @deco_validatelog
     def Check_ValueUniqueValue(self, *checkDataList):
-        _checkDataList = self.Get_CheckDataList(*checkDataList)
-        _errCount = 0
+        @deco_runvalicheck(self.Get_CheckDataList(*checkDataList))
+        async def check_validate(dataName):
+            _uniqueColumnList = self.Get_UniqueColumnList(dataName)
+            _errCount = 0
 
-        return _errCount
+            # Validate Check Code.
 
-
-    def Get_KeyColumnNum(self, dataName):
-        _targetData = self.Get_ExcelData(dataName)
-        _columnNum = 0
-
-        for column in _targetData[self.Get_ColumnNameNum()]:
-            if column.value == self.Get_KeyColomnName():
-                return _columnNum
-            
-            _columnNum += 1
-
-        Write_Log(ELogTpye.error, f'No [{self.Get_KeyColomnName()} Column] in [{dataName} Data Table]')
-        return False
+            return _errCount
+        return check_validate

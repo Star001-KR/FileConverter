@@ -54,16 +54,38 @@ class Validate():
         return _allExcelDataDict
 
 
-    def Get_ColumnNameNum(self):
+    @property
+    def targetSheetName(self):
+        return self._targetSheetName
+
+
+    @property
+    def columnNameNum(self):
         return self._columnNameNum
 
 
-    def Get_KeyColomnName(self):
+    @property
+    def columnTypeNum(self):
+        return self._columnTypeNum
+
+
+    @property
+    def keyColumnName(self):
         return self._keyColumnName
 
 
-    def Get_ColumnTypeNum(self):
-        return self._columnTypeNum
+    def Get_KeyColumnNum(self, dataName):
+            _targetData = self.Get_ExcelData(dataName)
+            _columnNum = 0
+
+            for column in _targetData[self.columnNameNum]:
+                if column.value == self.keyColumnName:
+                    return _columnNum
+                
+                _columnNum += 1
+
+            Write_Log(ELogTpye.error, f'No [{self.keyColumnName} Column] in [{dataName} Data Table]')
+            return False
 
 
     def Get_NotNullableColumnList(self, excelName):
@@ -85,6 +107,12 @@ class Validate():
                     _columnList.append(_columnNum)
 
             _columnNum += 1
+
+
+    def Get_UniqueColumnList(self, excelName):
+        _uniqueColumnList = []
+        
+        return len(_uniqueColumnList) and _uniqueColumnList or False
 
 
     def Get_ExcelData(self, excelName):
