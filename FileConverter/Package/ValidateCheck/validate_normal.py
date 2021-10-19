@@ -118,7 +118,6 @@ class NormalValidate(Validate):
 
             _valueList = []
             if not type(_uniqueColumnList) == bool or _uniqueColumnList:
-                print(_uniqueColumnList)
                 for col in _uniqueColumnList:
 
                     _valueList.clear()
