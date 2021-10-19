@@ -1,9 +1,0 @@
-{
-    "FieldGroup": 101,
-    "FieldObject": 102,
-    "FieldObjectGrowth": 103,
-    "FieldTile": 104,
-    "Monster": 105,
-    "MonsterSpawn": 106,
-    "MonsterSpawnGroup": 107
-}
