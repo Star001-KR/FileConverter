@@ -3,7 +3,7 @@ from enum import Enum, auto
 class EDirectory(Enum):
     excelDirectory = auto()
     jsonDirectory = auto()
-    gameConfigDirectory = auto()
+    toolConfigDirectory = auto()
     validationDirectory = auto()
     logs = auto()
 

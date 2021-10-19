@@ -3,8 +3,8 @@
     {
         "excelDirectory": "Data/ExcelData/",
         "jsonDirectory": "Data/JsonData/",
-        "gameConfigDirectory": "Config/",
-        "validationDirectory": "Config/",
+        "toolConfigDirectory": "Config/config.json",
+        "validationDirectory": "Config/validationconfig.yml",
         "logs": "Logs/"
     },
 
@@ -12,8 +12,8 @@
     {
         "excelDirectory": "Data\\ExcelData\\",
         "jsonDirectory": "Data\\JsonData\\",
-        "gameConfigDirectory": "Config\\",
-        "validationDirectory": "Config\\",
+        "toolConfigDirectory": "Config\\config.json",
+        "validationDirectory": "Config\\validationconfig.yml",
         "logs": "Logs\\"
     }
 }

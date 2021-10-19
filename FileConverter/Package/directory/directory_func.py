@@ -25,11 +25,11 @@ def deco_usedirmethod(directoryType):
 
         def wrap():
             return func(*_dirList)
-
-        def wrap_classmethod(self):
-            return func(self, *_dirList)
+            
+        def wrap_param1(param1):
+            return func(param1, *_dirList)
         
-        return (len(str(func.__qualname__).split('.')) > 1) and wrap_classmethod or wrap
+        return (len(str(func.__qualname__).split('.')) > 1) and wrap_param1 or wrap
     return decorator
 
 

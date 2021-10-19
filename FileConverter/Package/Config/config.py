@@ -1,22 +1,25 @@
 from enum import Enum, auto
 import json
 import platform
+from Package.Directory.directory import EDirectory
+from Package.Directory.directory_func import deco_usedirmethod
 
 class EConfigType(Enum):
     excel = auto()
+    data_id = auto()
+
 
 
 def Get_ConfigFromJson(configType, configCategory):
-    def get_configDirectory():
-        _isMac = (platform.system() == "Darwin") and True or False
-        
-        return (_isMac) and 'Config/config.json' or 'Config\\config.json'
+    @deco_usedirmethod(EDirectory.toolConfigDirectory)
+    def get_configDirectory(_, directory):
+        return directory
 
     assert (type(configType) == EConfigType), 'err : wrong param data type input.'
     if configType == EConfigType.excel:
         _configTypeName = 'excel'
 
-    jsonPath = get_configDirectory()
+    jsonPath = get_configDirectory('')
     
     with open (jsonPath) as file:
         file_json = json.load(file)
