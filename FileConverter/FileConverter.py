@@ -1,4 +1,4 @@
-# 2021.10.15 / Code By Tae Hyung Kim.
+# 2021.10.19 / Code By Tae Hyung Kim.
 
 from Package.Debug.log_func import *
 from Package.Directory.directory_func import *
@@ -12,7 +12,7 @@ def Init_Tool():
 
 if __name__ == '__main__':
     Init_Tool()
-    a = NormalValidate()
+    a = ValidateSet()
 
     a.Check_KeyDuplicate()
     a.Check_ValueEmpty()

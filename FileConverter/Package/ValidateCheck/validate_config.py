@@ -1,9 +1,16 @@
 from Package.ValidateCheck.validate import *
 from Package.ValidateCheck.decorator import *
+import yaml
 
 class ConfigValidate(Validate):
     def __init__(self):
         super().__init__()
+        self._validationDir = self.Init_ValidationConfig_Dir()
+
+
+    @deco_usedirmethod(EDirectory.validationDirectory)
+    def Init_ValidationConfig_Dir(self, yamlDir):
+        return yamlDir
 
 
     @deco_validatelog
