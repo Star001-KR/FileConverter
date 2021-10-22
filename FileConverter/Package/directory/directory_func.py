@@ -14,6 +14,27 @@ def deco_usedirmethod(directoryType):
         _dirList.append(Get_DirectoryByType(dirType))
 
     def decorator(func):
+        def wrap(*args):
+            def inner_param_0():
+                return func(*_dirList)
+            
+            def inner_param_1(param1):
+                return func(param1, *_dirList)
+
+            def inner_param_2(param1, param2):
+                return func(param1, param2, *_dirList)
+
+            _lenParam = len(args)
+
+            if _lenParam == 0:
+                return inner_param_0()
+
+            elif _lenParam == 1:
+                return inner_param_1(args[0])
+
+            elif _lenParam == 2:
+                return inner_param_2(args[0], args[1])
+
         if (type(directoryType) == EDirectory):
             appear_dirList(directoryType)
 
@@ -22,14 +43,8 @@ def deco_usedirmethod(directoryType):
                 assert (type(_dirType) == EDirectory), 'err : wrong data type in directoryType list.'
                 
                 appear_dirList(_dirType)
-
-        def wrap():
-            return func(*_dirList)
-            
-        def wrap_param1(param1):
-            return func(param1, *_dirList)
         
-        return (len(str(func.__qualname__).split('.')) > 1) and wrap_param1 or wrap
+        return wrap
     return decorator
 
 

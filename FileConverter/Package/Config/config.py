@@ -9,19 +9,15 @@ class EConfigType(Enum):
     data_id = auto()
 
 
-
-def Get_ConfigFromJson(configType, configCategory):
-    @deco_usedirmethod(EDirectory.toolConfigDirectory)
-    def get_configDirectory(_, directory):
-        return directory
-
+@deco_usedirmethod(EDirectory.toolConfigDirectory)
+def Get_ConfigFromJson(configType, configCategory, jsonPath):
     assert (type(configType) == EConfigType), 'err : wrong param data type input.'
     if configType == EConfigType.excel:
         _configTypeName = 'excel'
 
-    jsonPath = get_configDirectory('')
+    _jsonPath = jsonPath
     
-    with open (jsonPath) as file:
+    with open (_jsonPath) as file:
         file_json = json.load(file)
         configSet = file_json[_configTypeName]
 
