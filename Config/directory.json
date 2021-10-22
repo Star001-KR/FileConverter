@@ -1,19 +1,19 @@
 {
     "mac": 
     {
-        "excelDirectory": "Data/ExcelData/",
-        "jsonDirectory": "Data/JsonData/",
-        "toolConfigDirectory": "Config/config.json",
-        "validationDirectory": "Config/validationconfig.yml",
-        "logs": "Logs/"
+        "excelDirectory":               "Data/ExcelData/",
+        "jsonDirectory":                "Data/JsonData/",
+        "toolConfigDirectory":          "Config/config.json",
+        "validationDirectory":          "Config/validationconfig.yml",
+        "logs":                         "Logs/"
     },
 
     "windows": 
     {
-        "excelDirectory": "Data\\ExcelData\\",
-        "jsonDirectory": "Data\\JsonData\\",
-        "toolConfigDirectory": "Config\\config.json",
-        "validationDirectory": "Config\\validationconfig.yml",
-        "logs": "Logs\\"
+        "excelDirectory":               "Data\\ExcelData\\",
+        "jsonDirectory":                "Data\\JsonData\\",
+        "toolConfigDirectory":          "Config\\config.json",
+        "validationDirectory":          "Config\\validationconfig.yml",
+        "logs":                         "Logs\\"
     }
 }
