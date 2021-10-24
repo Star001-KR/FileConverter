@@ -1,4 +1,5 @@
 from Package.Debug.log_func import *
+from Package.Config.config import *
 import asyncio
 
 def deco_validatelog(validate_func):
@@ -52,4 +53,34 @@ def deco_runvalicheck(*checkDataList):
         _loop.close
         
         return _allErrCount
+    return decorator
+
+
+def deco_valiconfigsplit(configType):
+    def get_valiDataNColumn(configType):
+        assert type(configType) == EValidationConfigType, f'err : wrong config tpye input. (input data type : {type(configType)})'
+
+        _checkDict : dict = Get_ConifgFromYaml(configType)
+
+        _parantKeyList = []
+        _parantValueList = []
+
+        _childKeyList = []
+        _childValueList = []
+
+        for (key, value) in _checkDict.items():
+            _parantKeyList.append(str(key).split('.')[0])
+            _parantValueList.append(str(key).split('.')[1])
+            
+            _childKeyList.append(str(value).split('.')[0])
+            _childValueList.append(str(value).split('.')[1])
+        
+        return (_parantKeyList, _parantValueList, _childKeyList, _childValueList)
+
+    def decorator(validate_func):
+        def wrap():
+            (_parantKeyList, _parantValueList, _childKeyList, _childValueList) = get_valiDataNColumn(configType)
+
+            return validate_func(_parantKeyList, _parantValueList, _childKeyList, _childValueList)
+        return wrap
     return decorator
