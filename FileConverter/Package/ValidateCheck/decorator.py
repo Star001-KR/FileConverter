@@ -62,25 +62,12 @@ def deco_valiconfigsplit(configType):
 
         _checkDict : dict = Get_ConifgFromYaml(configType)
 
-        _parantKeyList = []
-        _parantValueList = []
-
-        _childKeyList = []
-        _childValueList = []
-
-        for (key, value) in _checkDict.items():
-            _parantKeyList.append(str(key).split('.')[0])
-            _parantValueList.append(str(key).split('.')[1])
-            
-            _childKeyList.append(str(value).split('.')[0])
-            _childValueList.append(str(value).split('.')[1])
-        
-        return (_parantKeyList, _parantValueList, _childKeyList, _childValueList)
+        return _checkDict
 
     def decorator(validate_func):
         def wrap():
-            (_parantKeyList, _parantValueList, _childKeyList, _childValueList) = get_valiDataNColumn(configType)
+            _checkDict = get_valiDataNColumn(configType)
 
-            return validate_func(_parantKeyList, _parantValueList, _childKeyList, _childValueList)
+            return validate_func(_checkDict)
         return wrap
     return decorator

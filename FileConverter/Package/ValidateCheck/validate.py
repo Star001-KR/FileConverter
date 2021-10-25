@@ -88,6 +88,20 @@ class Validate():
             return False
 
 
+    def Get_ColumnNum(self, dataName, columnName):
+        _targetData = self.Get_ExcelData(dataName)
+        _columnNum = 0
+
+        for column in _targetData[self.columnNameNum]:
+                if column.value == columnName:
+                    return _columnNum
+                
+                _columnNum += 1
+
+        Write_Log(ELogTpye.error, f'No [{columnName} Column] in [{dataName} Data Table]')
+        return False
+
+
     def Get_NotNullableColumnList(self, excelName):
         assert (type(excelName) == str), f'err : wrong param data type input. ({type(excelName)})'
         if not (excelName in self._allExcelDataDict.keys()):
