@@ -1,4 +1,4 @@
-# 2021.10.19 / Code By Tae Hyung Kim.
+# 2021.10.25 / Code By Tae Hyung Kim.
 
 from Package.Debug.log_func import *
 from Package.Directory.directory_func import *
@@ -18,3 +18,5 @@ if __name__ == '__main__':
     a.Check_ValueEmpty()
     a.Check_ValueDataType()
     a.Check_ValueUniqueValue()
+
+    a.Check_RefValue()
