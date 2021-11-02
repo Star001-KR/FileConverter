@@ -1,6 +1,5 @@
 ref_validation: # use ref data : ref data
     FieldObjectGrowth.FieldObjectID:        FieldObject.ID
-    FieldObjectGrowth.Skill:                Skill.ID
     MonsterSpawn.MonsterID:                 Monster.ID
     MonsterSpawn.SpawnGroupID:              MonsterSpawnGroup.ID
     FieldTile.FieldGroupID:                 FieldGroup.ID
