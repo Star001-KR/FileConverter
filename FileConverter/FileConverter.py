@@ -1,4 +1,4 @@
-# 2021.11.02 / Code By Tae Hyung Kim.
+# 2021.11.03 / Code By Tae Hyung Kim.
 
 from Package.Debug.log_func import *
 from Package.Directory.directory_func import *
@@ -20,3 +20,4 @@ if __name__ == '__main__':
     a.Check_ValueUniqueValue()
 
     a.Check_RefValue()
+    a.Check_ValueSizeCompare()

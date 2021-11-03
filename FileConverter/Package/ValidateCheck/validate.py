@@ -154,6 +154,10 @@ class Validate():
         return len(_columnList) and _columnList or False
 
 
+    def Get_AllExcelList(self):
+        return list(self._allExcelDataDict.keys())
+
+
     def Get_ExcelData(self, excelName):
         assert (type(excelName) == str), f'err : wrong param data type input. ({type(excelName)})'
         if not (excelName in self._allExcelDataDict.keys()):

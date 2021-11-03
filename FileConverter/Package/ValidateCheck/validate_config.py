@@ -8,15 +8,16 @@ class ConfigValidate(Validate):
     Example
     -------
     @deco_validatelog
-    def Check_RefValue(self, *checkDataList):
+    def Check_ValueSizeCompare(self, *checkDataList):
         @deco_valiconfigsplit(EValidationConfigType.ref_validation)
-        def check_validate(parantKeyList, parantValueList, childKeyList, childValueList):
-            _errCount = 0
+        def check_validate(checkDict : dict):
+            errCount = 0
+            checkDataSet = self.__Get_CheckDataSet(checkDict, *checkDataList)
 
             # Validate Check Code.
 
-            return _errCount
-        return check_validate
+            return errCount
+        return check_validate()
     """
     def __init__(self):
         super().__init__()
@@ -60,22 +61,48 @@ class ConfigValidate(Validate):
 
     @deco_validatelog
     def Check_ValueSizeCompare(self, *checkDataList):
-        _errCount = 0
+        @deco_valiconfigsplit(EValidationConfigType.value_size_compare)
+        def check_validate(checkDict : dict):
+            errCount = 0
+            checkDataSet = self.__Get_CheckDataSet(checkDict, *checkDataList)
+            
+            for (key, value) in checkDict.items():
+                if not str(key).split('.')[0] in checkDataSet:
+                    continue
+                
+                assert str(key).split('.')[0] == str(value).split('.')[0], f'err : small data table is not same from big data table.({str(key).split(".")[0]} / {str(value).split(".")[0]})'
 
-        return _errCount
+                _checkDataTable = str(key).split('.')[0]
+
+                _checkColumnName_big = str(key).split('.')[1]
+                _checkColumnNum_big = self.Get_ColumnNum(_checkDataTable, _checkColumnName_big)
+
+                _checkColumnName_small = str(value).split('.')[1]
+                _checkColumnNum_small = self.Get_ColumnNum(_checkDataTable, _checkColumnName_small)
+
+                for row in range(2, self.Get_LenExcelRows(_checkDataTable)):
+                    if self.Get_ExcelValue(_checkDataTable, row, _checkColumnNum_big) == None or self.Get_ExcelValue(_checkDataTable, row, _checkColumnNum_small) == None:
+                        continue
+
+                    elif not self.Get_ExcelValue(_checkDataTable, row, _checkColumnNum_big) >= self.Get_ExcelValue(_checkDataTable, row, _checkColumnNum_small):
+                        Write_Log(ELogTpye.error, f'Value Size : {_checkDataTable} - BigColumn : {_checkColumnNum_big + 1}, SmallColumn : {_checkColumnNum_small + 1} / Row : {row + 1}')
+                        errCount += 1
+
+            return errCount
+        return check_validate()
 
 
     def __Get_CheckDataSet(self, checkDict, *checkDataList):
-        _checkDataSet = set()
+        checkDataSet = set()
 
         if not len(checkDataList):
             for key in checkDict.keys():
-                _checkDataSet.add(str(key).split('.')[0])
+                checkDataSet.add(str(key).split('.')[0])
             
         else:
             for data in checkDataList:
                 for key in checkDict.keys():
                     if data == str(key).split('.')[0]:
-                        _checkDataSet.add(data)
+                        checkDataSet.add(data)
 
-        return _checkDataSet
+        return checkDataSet
