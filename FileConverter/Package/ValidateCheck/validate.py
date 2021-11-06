@@ -17,7 +17,7 @@ class Validate():
     
 
     @deco_usedirmethod(EDirectory.excelDirectory)
-    def Init_DataListFromExcel(self, exceDir):
+    def Init_DataListFromExcel(self, excelDir):
         def get_excelSheetDataDict(excelDir, targetSheetName):
             _excelName = str(os.path.basename(excelDir)).split('.')[0]
             
@@ -38,7 +38,7 @@ class Validate():
 
             return False
         
-        _allExcelData = glob.glob('{0}*.xlsx'.format(exceDir))
+        _allExcelData = glob.glob('{0}*.xlsx'.format(excelDir))
         _allExcelDataDict = {}
 
         for excelDir in _allExcelData:
