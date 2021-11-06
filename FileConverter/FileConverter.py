@@ -1,4 +1,4 @@
-# 2021.11.03 / Code By Tae Hyung Kim.
+# 2021.11.06 / Code By Tae Hyung Kim.
 
 from Package.Debug.log_func import *
 from Package.Directory.directory_func import *
@@ -12,12 +12,4 @@ def Init_Tool():
 
 if __name__ == '__main__':
     Init_Tool()
-    a = ValidateSet()
-
-    a.Check_KeyDuplicate()
-    a.Check_ValueEmpty()
-    a.Check_ValueDataType()
-    a.Check_ValueUniqueValue()
-
-    a.Check_RefValue()
-    a.Check_ValueSizeCompare()
+    Check_AllValidate()

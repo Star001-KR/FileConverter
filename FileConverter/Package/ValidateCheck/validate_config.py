@@ -23,6 +23,11 @@ class ConfigValidate(Validate):
         super().__init__()
 
 
+    def Check_AllValidate_Config(self, *checkDataList):
+        self.Check_RefValue(*checkDataList)
+        self.Check_ValueSizeCompare(*checkDataList)
+
+
     @deco_validatelog
     def Check_RefValue(self, *checkDataList):
         @deco_valiconfigsplit(EValidationConfigType.ref_validation)

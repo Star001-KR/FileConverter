@@ -1,6 +1,7 @@
 from Package.Debug.log_func import *
 from Package.Config.config import *
 import asyncio
+import glob
 
 def deco_validatelog(validate_func):
     def Write_StartLog(checkTypeStr):
@@ -71,3 +72,29 @@ def deco_valiconfigsplit(configType):
             return validate_func(_checkDict)
         return wrap
     return decorator
+
+
+def deco_startvalidatelog(func):
+    def get_targetdatalist(*checkDataList):
+        @deco_usedirmethod(EDirectory.excelDirectory)
+        def get_allexceldir(excelDir):
+            return glob.glob('{0}*.xlsx'.format(excelDir))
+
+        if not len(checkDataList):
+            _checkList = get_allexceldir()
+
+        else:
+            _checkList = checkDataList
+
+        return _checkList
+
+    def wrap(*checkDataList):
+        Write_Log(ELogTpye.normal, '----------------------------------------------------------------')
+        Write_Log(ELogTpye.normal, f'Start Check {func.__name__}.')
+        Write_Log(ELogTpye.normal, '< check target data table list. >')
+
+        for data in get_targetdatalist(*checkDataList):
+            Write_Log(ELogTpye.normal, f'{data}')
+
+        return func(*checkDataList)
+    return wrap

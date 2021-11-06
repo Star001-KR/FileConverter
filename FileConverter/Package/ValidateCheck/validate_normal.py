@@ -29,6 +29,13 @@ class NormalValidate(Validate):
         super().__init__()
 
 
+    def Check_AllValidate_Normal(self, *checkDataList):
+        self.Check_KeyDuplicate(*checkDataList)
+        self.Check_ValueEmpty(*checkDataList)
+        self.Check_ValueDataType(*checkDataList)
+        self.Check_ValueUniqueValue(*checkDataList)
+
+
     @deco_validatelog
     def Check_KeyDuplicate(self, *checkDataList):
         @deco_runvalicheck(self.Get_CheckDataList(*checkDataList))
