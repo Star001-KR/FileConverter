@@ -16,5 +16,16 @@
         "Monster":                  105,
         "MonsterSpawn":             106,
         "MonsterSpawnGroup":        107
+    },
+
+    "last_tid":
+    {
+        "FieldGroup":               0,
+        "FieldObject":              0,
+        "FieldObjectGrowth":        0,
+        "FieldTile":                0,
+        "Monster":                  0,
+        "MonsterSpawn":             0,
+        "MonsterSpawnGroup":        0                
     }
 }
