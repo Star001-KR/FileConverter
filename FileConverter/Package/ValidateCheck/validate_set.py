@@ -8,24 +8,15 @@ class ValidateSet(NormalValidate, ConfigValidate):
 
 @deco_startvalidatelog
 def Check_AllValidate(*checkDataList):
-    Write_Log(ELogTpye.normal, '----------------------------------------------------------------')
-    Write_Log(ELogTpye.normal, 'Start Check All Validate.')
-    
     ValidateSet().Check_AllValidate_Config(*checkDataList)
     ValidateSet().Check_AllValidate_Normal(*checkDataList)
 
 
 @deco_startvalidatelog
-def Check_AllValidate_Config(*checkDataList):
-    Write_Log(ELogTpye.normal, '----------------------------------------------------------------')
-    Write_Log(ELogTpye.normal, 'Start Check All Config Validate.')
-    
+def Check_ConfigValidate(*checkDataList):
     ValidateSet().Check_AllValidate_Config(*checkDataList)
 
 
 @deco_startvalidatelog
-def Check_AllValidate_Normal(*checkDataList):
-    Write_Log(ELogTpye.normal, '----------------------------------------------------------------')
-    Write_Log(ELogTpye.normal, 'Start Check All Normal Validate.')
-    
+def Check_NormalValidate(*checkDataList):
     ValidateSet().Check_AllValidate_Normal(*checkDataList)

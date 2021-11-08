@@ -90,7 +90,8 @@ def deco_startvalidatelog(func):
 
     def wrap(*checkDataList):
         Write_Log(ELogTpye.normal, '----------------------------------------------------------------')
-        Write_Log(ELogTpye.normal, f'Start Check {func.__name__}.')
+        Write_Log(ELogTpye.normal, f'Run Validate Check : {str(func.__name__).split("_")[1]}.')
+        Write_Log(ELogTpye.normal, '')
         Write_Log(ELogTpye.normal, '< check target data table list. >')
 
         for data in get_targetdatalist(*checkDataList):
