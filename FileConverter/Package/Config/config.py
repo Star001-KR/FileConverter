@@ -7,6 +7,7 @@ import yaml
 class EConfigType(Enum):
     excel = auto()
     data_id = auto()
+    last_tid = auto()
 
 
 class EValidationConfigType(Enum):
@@ -35,10 +36,15 @@ def Get_ConfigFromJson(configType, configCategory, jsonPath):
     with open (jsonPath) as file:
         file_json = json.load(file)
         configSet = file_json[_configTypeName]
+    
+    # if want return all config in config type input magic keyword 'all (or All)' at configCategory param.
+    if configCategory == 'all' or configCategory == 'All':
+        return configSet
 
-    for config in configSet:
-        if config == configCategory:
-            return configSet[config]
+    else:
+        for config in configSet:
+            if config == configCategory:
+                return configSet[config]
 
     assert (False), 'err : input wrong config category.'
 

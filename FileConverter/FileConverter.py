@@ -1,8 +1,9 @@
-# 2021.11.06 / Code By Tae Hyung Kim.
+# 2021.11.08 / Code By Tae Hyung Kim.
 
 from Package.Debug.log_func import *
 from Package.Directory.directory_func import *
 from Package.ValidateCheck.validate_set import *
+from Package.Convert.convert import *
 
 def Init_Tool():
     Init_Log(False)
@@ -13,3 +14,6 @@ def Init_Tool():
 if __name__ == '__main__':
     Init_Tool()
     Check_AllValidate()
+
+    a = Convert()
+    print(a._dataIdDict)
