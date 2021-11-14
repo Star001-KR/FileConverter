@@ -1,31 +1,26 @@
 {
-    "excel": 
-    {
-        "targetSheetName":          "Sheet1",
-        "columnNameNum":            0,
-        "columnTypeNum" :           1,
-        "keyColumnName":            "ID"
+    "excel": {
+        "targetSheetName": "Sheet1",
+        "columnNameNum": 0,
+        "columnTypeNum": 1,
+        "keyColumnName": "ID"
     },
-
-    "data_id":
-    {
-        "FieldGroup":               101,
-        "FieldObject":              102,
-        "FieldObjectGrowth":        103,
-        "FieldTile":                104,
-        "Monster":                  105,
-        "MonsterSpawn":             106,
-        "MonsterSpawnGroup":        107
+    "data_id": {
+        "FieldGroup": 101,
+        "FieldObject": 102,
+        "FieldObjectGrowth": 103,
+        "FieldTile": 104,
+        "Monster": 105,
+        "MonsterSpawn": 106,
+        "MonsterSpawnGroup": 107
     },
-
-    "last_tid":
-    {
-        "FieldGroup":               0,
-        "FieldObject":              0,
-        "FieldObjectGrowth":        0,
-        "FieldTile":                0,
-        "Monster":                  0,
-        "MonsterSpawn":             0,
-        "MonsterSpawnGroup":        0                
+    "last_tid": {
+        "FieldGroup": 0,
+        "FieldObject": 0,
+        "FieldObjectGrowth": 0,
+        "FieldTile": 0,
+        "Monster": 0,
+        "MonsterSpawn": 0,
+        "MonsterSpawnGroup": 0
     }
 }

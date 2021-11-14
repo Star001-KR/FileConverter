@@ -24,6 +24,9 @@ def deco_usedirmethod(directoryType):
             def inner_param_2(param1, param2):
                 return func(param1, param2, *_dirList)
 
+            def inner_param_3(param1, param2, param3):
+                return func(param1, param2, param3, *_dirList)
+
             _lenParam = len(args)
 
             if _lenParam == 0:
@@ -34,6 +37,9 @@ def deco_usedirmethod(directoryType):
 
             elif _lenParam == 2:
                 return inner_param_2(args[0], args[1])
+
+            elif _lenParam == 3:
+                return inner_param_3(args[0], args[1], args[2])
 
         if (type(directoryType) == EDirectory):
             appear_dirList(directoryType)

@@ -1,4 +1,4 @@
-# 2021.11.08 / Code By Tae Hyung Kim.
+# 2021.11.14 / Code By Tae Hyung Kim.
 
 from Package.Debug.log_func import *
 from Package.Directory.directory_func import *
@@ -16,4 +16,6 @@ if __name__ == '__main__':
     Check_AllValidate()
 
     a = Convert()
-    print(a._dataIdDict)
+
+    a.Init_Tid('FieldGroup', 'FieldObject')
+    

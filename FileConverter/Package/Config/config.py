@@ -18,9 +18,9 @@ class EValidationConfigType(Enum):
 def Get_ConfigTypeName(configType):
     assert type(configType) == EConfigType or type(configType) == EValidationConfigType, 'err : wrong param data type input.'
 
-    _configEnum = (type(configType) == EConfigType) and EConfigType or EValidationConfigType
+    configEnum = (type(configType) == EConfigType) and EConfigType or EValidationConfigType
 
-    for member in _configEnum:
+    for member in configEnum:
         if configType == member:
             return member._name_
 
@@ -31,11 +31,11 @@ def Get_ConfigTypeName(configType):
 def Get_ConfigFromJson(configType, configCategory, jsonPath):
     assert (type(configType) == EConfigType), 'err : wrong param data type input.'
 
-    _configTypeName = Get_ConfigTypeName(configType)
+    configTypeName = Get_ConfigTypeName(configType)
     
     with open (jsonPath) as file:
         file_json = json.load(file)
-        configSet = file_json[_configTypeName]
+        configSet = file_json[configTypeName]
     
     # if want return all config in config type input magic keyword 'all (or All)' at configCategory param.
     if configCategory == 'all' or configCategory == 'All':
@@ -49,14 +49,41 @@ def Get_ConfigFromJson(configType, configCategory, jsonPath):
     assert (False), 'err : input wrong config category.'
 
 
+@deco_usedirmethod(EDirectory.toolConfigDirectory)
+def Set_ConfigToJson(configType, configCategory, configValue, jsonPath):
+    assert (type(configType) == EConfigType), 'err : wrong param data type input.'
+    
+    configTypeName = Get_ConfigTypeName(configType)
+    
+    with open (jsonPath) as file:
+        file_json = json.load(file)
+        file_json[configTypeName][configCategory] = configValue
+    
+    with open (jsonPath, 'w') as file:
+        json.dump(file_json, file, indent = 4)
+
+
+@deco_usedirmethod(EDirectory.toolConfigDirectory)
+def Get_ConfigKeyList(configType, jsonPath):
+    assert (type(configType) == EConfigType), 'err : wrong param data type input.'
+    
+    configTypeName = Get_ConfigTypeName(configType)
+
+    with open (jsonPath) as file:
+        file_json = json.load(file)
+        file_jsonConfig : dict = file_json[configTypeName]
+        
+    return list(file_jsonConfig.keys())
+
+
 @deco_usedirmethod(EDirectory.validationDirectory)
 def Get_ConifgFromYaml(configType, yamlPath):
     assert (type(configType) == EValidationConfigType), 'err : wrong param data type input.'
     
-    _configTypeName = Get_ConfigTypeName(configType)
+    configTypeName = Get_ConfigTypeName(configType)
 
     with open(yamlPath) as file:
         file_yaml = yaml.safe_load(file)
-        configSet = file_yaml[_configTypeName]
+        configSet = file_yaml[configTypeName]
 
     return configSet
