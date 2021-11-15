@@ -45,3 +45,16 @@ class Convert():
             assert (dataName in Get_ConfigKeyList(EConfigType.last_tid)), f'err : {dataName} is not in Config Key List'
             
             Set_ConfigToJson(EConfigType.last_tid, dataName, 0)
+        
+
+    def Create_Tid(self, dataName):
+        assert (dataName in Get_ConfigKeyList(EConfigType.last_tid)), f'err : {dataName} is not in data name list.'
+
+        last_tid = Get_ConfigFromJson(EConfigType.last_tid, dataName)
+        last_tid += 1
+        
+        assert (last_tid <= 999999), f'err : {dataName} tid overflow.'
+
+        Set_ConfigToJson(EConfigType.last_tid, dataName, last_tid)
+
+        return last_tid

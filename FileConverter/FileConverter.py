@@ -17,5 +17,8 @@ if __name__ == '__main__':
 
     a = Convert()
 
-    a.Init_Tid('all')
+    print(a.Create_Tid('FieldGroup'))
+    print(a.Create_Tid('FieldGroup'))
+    print(a.Create_Tid('FieldGroup'))
+    print(a.Create_Tid('FieldGroup'))
     
