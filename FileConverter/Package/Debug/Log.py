@@ -16,7 +16,7 @@ class Log():
     logLine = 0
     
     def __init__(self):
-        self._logFileName = 'log_' + time.strftime('%Y_%m_%d_%H:%M:%S', time.localtime(time.time())) + '.txt'
+        self._logFileName = 'log_' + time.strftime('%Y_%m_%d_%H.%M.%S', time.localtime(time.time())) + '.txt'
         self._logFullDirectory = self.Init_LogDirectory() + self._logFileName
 
         try:
