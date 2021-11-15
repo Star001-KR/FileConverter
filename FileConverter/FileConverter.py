@@ -1,4 +1,4 @@
-# 2021.11.14 / Code By Tae Hyung Kim.
+# 2021.11.15 / Code By Tae Hyung Kim.
 
 from Package.Debug.log_func import *
 from Package.Directory.directory_func import *
@@ -17,5 +17,5 @@ if __name__ == '__main__':
 
     a = Convert()
 
-    a.Init_Tid('FieldGroup', 'FieldObject')
+    a.Init_Tid('all')
     
