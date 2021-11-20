@@ -1,4 +1,4 @@
-# 2021.11.15 / Code By Tae Hyung Kim.
+# 2021.11.20 / Code By Tae Hyung Kim.
 
 from Package.Debug.log_func import *
 from Package.Directory.directory_func import *
@@ -17,8 +17,6 @@ if __name__ == '__main__':
 
     a = Convert()
 
-    print(a.Create_Tid('FieldGroup'))
-    print(a.Create_Tid('FieldGroup'))
-    print(a.Create_Tid('FieldGroup'))
-    print(a.Create_Tid('FieldGroup'))
+    for dataName in a._dataNameList:
+        a.Convert_ExcelToJson(dataName)
     

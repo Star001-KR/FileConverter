@@ -1,18 +1,14 @@
 from Package.Directory.directory_func import *
 from Package.Config.config import *
 from Package.Debug.log_func import *
+import glob
+import os
 
 class Convert():
     def __init__(self):
         self._dataIdDict = Get_ConfigFromJson(EConfigType.data_id, 'all')
         self._lastTidDict = Get_ConfigFromJson(EConfigType.last_tid, 'all')
-
-        self._jsonDir = self.Init_JsonDir()
-
-
-    @deco_usedirmethod(EDirectory.jsonDirectory)
-    def Init_JsonDir(self, jsonDir):
-        return jsonDir
+        self._dataNameList = Get_ConfigKeyList(EConfigType.data_id)
 
 
     def Init_Tid(self, *dataNameList):
@@ -48,13 +44,31 @@ class Convert():
         
 
     def Create_Tid(self, dataName):
-        assert (dataName in Get_ConfigKeyList(EConfigType.last_tid)), f'err : {dataName} is not in data name list.'
+        assert (dataName in self._dataNameList), f'err : {dataName} is not in data name list.'
 
-        last_tid = Get_ConfigFromJson(EConfigType.last_tid, dataName)
+        last_tid = self._lastTidDict[dataName]
         last_tid += 1
         
         assert (last_tid <= 999999), f'err : {dataName} tid overflow.'
 
         Set_ConfigToJson(EConfigType.last_tid, dataName, last_tid)
-
+        
         return last_tid
+
+
+    @deco_usedirmethod(EDirectory.jsonDirectory)
+    def Convert_ExcelToJson(self, dataName, jsonDir):
+        assert (dataName in self._dataNameList), f'err : {dataName} is not in data name list.'
+
+        allJsonData = glob.glob('{0}*.json'.format(jsonDir))
+        allJsonTidDict = {} # key = data name / value = tid
+
+        for jsonPath in allJsonData:
+            _jsonName = str(os.path.basename(jsonPath)).split('.')[0]
+            
+            if dataName == _jsonName:
+                return
+
+        _jsonPath = jsonDir + dataName + '.json'
+        with open (_jsonPath, 'w') as file:
+            pass
