@@ -10,6 +10,9 @@ class Convert():
         self._lastTidDict = Get_ConfigFromJson(EConfigType.last_tid, 'all')
         self._dataNameList = Get_ConfigKeyList(EConfigType.data_id)
 
+        self._keyColumnName = Get_ConfigFromJson(EConfigType.excel, 'keyColumnName')
+        self._tidString = Get_ConfigFromJson(EConfigType.excel, 'tidString')
+
 
     def Init_Tid(self, *dataNameList):
         """
@@ -60,15 +63,29 @@ class Convert():
     def Convert_ExcelToJson(self, dataName, jsonDir):
         assert (dataName in self._dataNameList), f'err : {dataName} is not in data name list.'
 
+        _jsonPath = jsonDir + dataName + '.json'
+
         allJsonData = glob.glob('{0}*.json'.format(jsonDir))
-        allJsonTidDict = {} # key = data name / value = tid
+        allJsonTidDict = {} # key = id / value = tid
 
         for jsonPath in allJsonData:
             _jsonName = str(os.path.basename(jsonPath)).split('.')[0]
             
             if dataName == _jsonName:
-                return
+                with open (_jsonPath) as file:
+                    try:
+                        _jsonData =  json.load(file)
+                        
+                        for row in _jsonData:
+                            allJsonTidDict[row[self._keyColumnName]] = row[self._tidString]
 
-        _jsonPath = jsonDir + dataName + '.json'
-        with open (_jsonPath, 'w') as file:
-            pass
+                    except KeyError:
+                            Write_Log(ELogTpye.warning, f'worng json data row. {dataName} row : {row}')
+                
+                    except:
+                        pass
+
+        if not len(allJsonTidDict):
+            with open (_jsonPath, 'w') as file:
+                _jsonData =  json.load(file)
+                pass

@@ -3,7 +3,8 @@
         "targetSheetName": "Sheet1",
         "columnNameNum": 0,
         "columnTypeNum": 1,
-        "keyColumnName": "ID"
+        "keyColumnName": "ID",
+        "tidString": "TID"
     },
     "data_id": {
         "FieldGroup": 101,
@@ -15,7 +16,7 @@
         "MonsterSpawnGroup": 107
     },
     "last_tid": {
-        "FieldGroup": 0,
+        "FieldGroup": 8,
         "FieldObject": 0,
         "FieldObjectGrowth": 0,
         "FieldTile": 0,
