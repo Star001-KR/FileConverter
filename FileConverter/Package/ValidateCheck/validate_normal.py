@@ -1,4 +1,4 @@
-from Package.ValidateCheck.validate import *
+from Package.Data.excel import *
 from Package.ValidateCheck.decorator import *
 
 class EColumnProperty(Enum):
@@ -8,7 +8,7 @@ class EColumnProperty(Enum):
     normal = auto()
 
 
-class NormalValidate(Validate):
+class NormalValidate(Excel):
     """
     Validation by excel data table unit (without config.json).
     

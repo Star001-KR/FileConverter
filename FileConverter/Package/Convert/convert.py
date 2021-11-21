@@ -1,16 +1,16 @@
 from Package.Directory.directory_func import *
-from Package.Config.config import *
+from Package.Data.config import *
+from Package.Data.excel import *
 from Package.Debug.log_func import *
 import glob
 import os
 
-class Convert():
+class Convert(Excel):
     def __init__(self):
         self._dataIdDict = Get_ConfigFromJson(EConfigType.data_id, 'all')
         self._lastTidDict = Get_ConfigFromJson(EConfigType.last_tid, 'all')
         self._dataNameList = Get_ConfigKeyList(EConfigType.data_id)
 
-        self._keyColumnName = Get_ConfigFromJson(EConfigType.excel, 'keyColumnName')
         self._tidString = Get_ConfigFromJson(EConfigType.excel, 'tidString')
 
 
@@ -86,6 +86,9 @@ class Convert():
                         pass
 
         if not len(allJsonTidDict):
+            _dumpList = []
+            #for row in 
+
             with open (_jsonPath, 'w') as file:
                 _jsonData =  json.load(file)
                 pass

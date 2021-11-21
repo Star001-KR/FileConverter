@@ -1,7 +1,8 @@
-from Package.ValidateCheck.validate import *
+from FileConverter.Package.Data.excel import Excel
+from Package.Data.excel import *
 from Package.ValidateCheck.decorator import *
 
-class ConfigValidate(Validate):
+class ConfigValidate(Excel):
     """
     Excel data validation with reference to vaildation config yaml file.
     
