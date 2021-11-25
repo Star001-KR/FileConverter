@@ -1,5 +1,5 @@
 from Package.Debug.log_func import *
-from Package.Config.config import *
+from Package.Data.config import *
 import asyncio
 import glob
 

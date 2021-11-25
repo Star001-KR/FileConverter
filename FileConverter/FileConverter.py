@@ -1,4 +1,4 @@
-# 2021.11.21 / Code By Tae Hyung Kim.
+# 2021.11.25 / Code By Tae Hyung Kim.
 
 from Package.Debug.log_func import *
 from Package.Directory.directory_func import *
@@ -17,5 +17,6 @@ if __name__ == '__main__':
 
     a = Convert()
 
-    a.Convert_ExcelToJson('FieldGroup')
+    #a.Convert_ExcelToJson('FieldGroup')
     
+    a.Convert_ExcelToJson('FieldGroup')

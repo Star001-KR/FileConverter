@@ -7,6 +7,13 @@ import os
 
 class Convert(Excel):
     def __init__(self):
+        self._targetSheetName = Get_ConfigFromJson(EConfigType.excel, 'targetSheetName')
+        self._columnNameNum = Get_ConfigFromJson(EConfigType.excel, 'columnNameNum')
+        self._columnTypeNum = Get_ConfigFromJson(EConfigType.excel, 'columnTypeNum')
+        self._keyColumnName = Get_ConfigFromJson(EConfigType.excel, 'keyColumnName')
+        
+        self._allExcelDataDict = self.Init_DataListFromExcel()
+
         self._dataIdDict = Get_ConfigFromJson(EConfigType.data_id, 'all')
         self._lastTidDict = Get_ConfigFromJson(EConfigType.last_tid, 'all')
         self._dataNameList = Get_ConfigKeyList(EConfigType.data_id)
@@ -16,8 +23,8 @@ class Convert(Excel):
 
     def Init_Tid(self, *dataNameList):
         """
-        Initalize data tid.
-        Input data name list to be initialize in data name list param.
+        * Initalize data tid.
+        * Input data name list to be initialize in data name list param.
         
         Example 1
         -------
@@ -25,7 +32,7 @@ class Convert(Excel):
 
         convert.Init_Tid('dataName1', 'dataName2')
         
-        If want initialize all data tid, input magic keyword 'all (or All)' at data name list param.
+        * If want initialize all data tid, input magic keyword 'all (or All)' at data name list param.
         
         Example 2
         -------
@@ -87,8 +94,26 @@ class Convert(Excel):
 
         if not len(allJsonTidDict):
             _dumpList = []
-            #for row in 
+            _rowData = {}
 
-            with open (_jsonPath, 'w') as file:
-                _jsonData =  json.load(file)
-                pass
+            for row in range(self._columnTypeNum + 1, self.Get_LenExcelRows(dataName)):
+                _rowData.clear()
+                
+                _columnNum = 0
+                while True:
+                    _value = self.Get_ExcelValue(dataName, row, _columnNum)
+
+                    if (not _value) and (not _columnNum in self.Get_NotNullableColumnList(dataName)):
+                        _dumpList.append(dict(_rowData))
+                        break
+
+                    else:
+                        if _columnNum in self.Get_NotNullableColumnList(dataName):
+                            _rowData[self.Get_ExcelValue(dataName, self._columnNameNum, _columnNum)] = _value
+                        
+                        _columnNum += 1
+                
+        print(_dumpList)
+            # with open (_jsonPath, 'w') as file:
+            #     _jsonData =  json.load(file)
+            #     pass
