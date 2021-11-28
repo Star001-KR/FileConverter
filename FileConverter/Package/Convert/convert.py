@@ -21,6 +21,11 @@ class Convert(Excel):
         self._tidString = Get_ConfigFromJson(EConfigType.excel, 'tidString')
 
 
+    @property
+    def tidString(self):
+        return self._tidString
+
+
     def Init_Tid(self, *dataNameList):
         """
         * Initalize data tid.
@@ -56,14 +61,13 @@ class Convert(Excel):
     def Create_Tid(self, dataName):
         assert (dataName in self._dataNameList), f'err : {dataName} is not in data name list.'
 
-        last_tid = self._lastTidDict[dataName]
-        last_tid += 1
+        self._lastTidDict[dataName] += 1
         
-        assert (last_tid <= 999999), f'err : {dataName} tid overflow.'
+        assert (self._lastTidDict[dataName] <= 999999), f'err : {dataName} tid overflow.'
 
-        Set_ConfigToJson(EConfigType.last_tid, dataName, last_tid)
+        Set_ConfigToJson(EConfigType.last_tid, dataName, self._lastTidDict[dataName])
         
-        return last_tid
+        return self._lastTidDict[dataName]
 
 
     @deco_usedirmethod(EDirectory.jsonDirectory)
@@ -104,6 +108,7 @@ class Convert(Excel):
                     _value = self.Get_ExcelValue(dataName, row, _columnNum)
 
                     if (not _value) and (not _columnNum in self.Get_NotNullableColumnList(dataName)):
+                        _rowData[self.tidString] = self.Create_Tid(dataName)
                         _dumpList.append(dict(_rowData))
                         break
 
@@ -112,8 +117,7 @@ class Convert(Excel):
                             _rowData[self.Get_ExcelValue(dataName, self._columnNameNum, _columnNum)] = _value
                         
                         _columnNum += 1
+
+        with open (_jsonPath, 'w') as file:
+            json.dump(_dumpList, file, indent = 4)
                 
-        print(_dumpList)
-            # with open (_jsonPath, 'w') as file:
-            #     _jsonData =  json.load(file)
-            #     pass
