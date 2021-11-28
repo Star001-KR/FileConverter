@@ -1,0 +1,18 @@
+[
+    {
+        "ID": "FieldGroup_1",
+        "CoverImagePath": "ResourceName",
+        "EmptyTilePath": "ResourceName",
+        "ObjectTilePath": "ResourceName",
+        "MonsterTilePath": "ResourceName",
+        "TID": 101000001
+    },
+    {
+        "ID": "FieldGroup_2",
+        "CoverImagePath": "ResourceName",
+        "EmptyTilePath": "ResourceName",
+        "ObjectTilePath": "ResourceName",
+        "MonsterTilePath": "ResourceName",
+        "TID": 101000002
+    }
+]

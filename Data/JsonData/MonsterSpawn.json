@@ -1,0 +1,1129 @@
+[
+    {
+        "ID": "Battle1_Normal1_Spawn1",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal1",
+        "SpawnTime": 1,
+        "MonsterID": "Battle1_Normal1_Normal1",
+        "TID": 106000001
+    },
+    {
+        "ID": "Battle1_Normal1_Spawn2",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal1",
+        "SpawnTime": 4,
+        "MonsterID": "Battle1_Normal1_Normal1",
+        "TID": 106000002
+    },
+    {
+        "ID": "Battle1_Normal1_Spawn3",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal1",
+        "SpawnTime": 7,
+        "MonsterID": "Battle1_Normal1_Normal1",
+        "TID": 106000003
+    },
+    {
+        "ID": "Battle1_Normal1_Spawn4",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal1",
+        "SpawnTime": 10,
+        "MonsterID": "Battle1_Normal1_Normal1",
+        "TID": 106000004
+    },
+    {
+        "ID": "Battle1_Normal1_Spawn5",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal1",
+        "SpawnTime": 12,
+        "MonsterID": "Battle1_Normal1_Normal2",
+        "TID": 106000005
+    },
+    {
+        "ID": "Battle1_Normal1_Spawn6",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal1",
+        "SpawnTime": 14,
+        "MonsterID": "Battle1_Normal1_Normal2",
+        "TID": 106000006
+    },
+    {
+        "ID": "Battle1_Normal1_Spawn7",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal1",
+        "SpawnTime": 16,
+        "MonsterID": "Battle1_Normal1_Normal2",
+        "TID": 106000007
+    },
+    {
+        "ID": "Battle1_Normal1_Spawn8",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal1",
+        "SpawnTime": 17,
+        "MonsterID": "Battle1_Normal1_Normal3",
+        "TID": 106000008
+    },
+    {
+        "ID": "Battle1_Normal1_Spawn9",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal1",
+        "SpawnTime": 18,
+        "MonsterID": "Battle1_Normal1_Normal3",
+        "TID": 106000009
+    },
+    {
+        "ID": "Battle1_Normal1_Spawn10",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal1",
+        "SpawnTime": 19,
+        "MonsterID": "Battle1_Normal1_Normal3",
+        "TID": 106000010
+    },
+    {
+        "ID": "Battle1_Normal1_Spawn11",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal1",
+        "SpawnTime": 20,
+        "MonsterID": "Battle1_Normal1_Normal2",
+        "TID": 106000011
+    },
+    {
+        "ID": "Battle1_Normal1_Spawn12",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal1",
+        "SpawnTime": 21,
+        "MonsterID": "Battle1_Normal1_Normal2",
+        "TID": 106000012
+    },
+    {
+        "ID": "Battle1_Normal2_Spawn1",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal2",
+        "SpawnTime": 1,
+        "MonsterID": "Battle1_Normal2_Normal1",
+        "TID": 106000013
+    },
+    {
+        "ID": "Battle1_Normal2_Spawn2",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal2",
+        "SpawnTime": 4,
+        "MonsterID": "Battle1_Normal2_Normal1",
+        "TID": 106000014
+    },
+    {
+        "ID": "Battle1_Normal2_Spawn3",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal2",
+        "SpawnTime": 7,
+        "MonsterID": "Battle1_Normal2_Normal1",
+        "TID": 106000015
+    },
+    {
+        "ID": "Battle1_Normal2_Spawn4",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal2",
+        "SpawnTime": 10,
+        "MonsterID": "Battle1_Normal2_Normal1",
+        "TID": 106000016
+    },
+    {
+        "ID": "Battle1_Normal2_Spawn5",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal2",
+        "SpawnTime": 12,
+        "MonsterID": "Battle1_Normal2_Normal1",
+        "TID": 106000017
+    },
+    {
+        "ID": "Battle1_Normal2_Spawn6",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal2",
+        "SpawnTime": 14,
+        "MonsterID": "Battle1_Normal2_Normal2",
+        "TID": 106000018
+    },
+    {
+        "ID": "Battle1_Normal2_Spawn7",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal2",
+        "SpawnTime": 16,
+        "MonsterID": "Battle1_Normal2_Normal2",
+        "TID": 106000019
+    },
+    {
+        "ID": "Battle1_Normal2_Spawn8",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal2",
+        "SpawnTime": 17,
+        "MonsterID": "Battle1_Normal2_Normal3",
+        "TID": 106000020
+    },
+    {
+        "ID": "Battle1_Normal2_Spawn9",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal2",
+        "SpawnTime": 18,
+        "MonsterID": "Battle1_Normal2_Normal3",
+        "TID": 106000021
+    },
+    {
+        "ID": "Battle1_Normal2_Spawn10",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal2",
+        "SpawnTime": 19,
+        "MonsterID": "Battle1_Normal2_Normal3",
+        "TID": 106000022
+    },
+    {
+        "ID": "Battle1_Normal2_Spawn11",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal2",
+        "SpawnTime": 20,
+        "MonsterID": "Battle1_Normal2_Normal2",
+        "TID": 106000023
+    },
+    {
+        "ID": "Battle1_Normal2_Spawn12",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal2",
+        "SpawnTime": 21,
+        "MonsterID": "Battle1_Normal2_Normal2",
+        "TID": 106000024
+    },
+    {
+        "ID": "Battle1_Normal3_Spawn1",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal3",
+        "SpawnTime": 1,
+        "MonsterID": "Battle1_Normal1_Normal1",
+        "TID": 106000025
+    },
+    {
+        "ID": "Battle1_Normal3_Spawn2",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal3",
+        "SpawnTime": 4,
+        "MonsterID": "Battle1_Normal1_Normal1",
+        "TID": 106000026
+    },
+    {
+        "ID": "Battle1_Normal3_Spawn3",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal3",
+        "SpawnTime": 7,
+        "MonsterID": "Battle1_Normal1_Normal1",
+        "TID": 106000027
+    },
+    {
+        "ID": "Battle1_Normal3_Spawn4",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal3",
+        "SpawnTime": 10,
+        "MonsterID": "Battle1_Normal1_Normal1",
+        "TID": 106000028
+    },
+    {
+        "ID": "Battle1_Normal3_Spawn5",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal3",
+        "SpawnTime": 12,
+        "MonsterID": "Battle1_Normal1_Normal2",
+        "TID": 106000029
+    },
+    {
+        "ID": "Battle1_Normal3_Spawn6",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal3",
+        "SpawnTime": 14,
+        "MonsterID": "Battle1_Normal1_Normal2",
+        "TID": 106000030
+    },
+    {
+        "ID": "Battle1_Normal3_Spawn7",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal3",
+        "SpawnTime": 16,
+        "MonsterID": "Battle1_Normal1_Normal2",
+        "TID": 106000031
+    },
+    {
+        "ID": "Battle1_Normal3_Spawn8",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal3",
+        "SpawnTime": 17,
+        "MonsterID": "Battle1_Normal1_Normal3",
+        "TID": 106000032
+    },
+    {
+        "ID": "Battle1_Normal3_Spawn9",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal3",
+        "SpawnTime": 18,
+        "MonsterID": "Battle1_Normal1_Normal3",
+        "TID": 106000033
+    },
+    {
+        "ID": "Battle1_Normal3_Spawn10",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal3",
+        "SpawnTime": 19,
+        "MonsterID": "Battle1_Normal1_Normal3",
+        "TID": 106000034
+    },
+    {
+        "ID": "Battle1_Normal3_Spawn11",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal3",
+        "SpawnTime": 20,
+        "MonsterID": "Battle1_Normal1_Normal3",
+        "TID": 106000035
+    },
+    {
+        "ID": "Battle1_Normal3_Spawn12",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal3",
+        "SpawnTime": 21,
+        "MonsterID": "Battle1_Normal1_Normal3",
+        "TID": 106000036
+    },
+    {
+        "ID": "Battle1_Normal4_Spawn1",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal4",
+        "SpawnTime": 1,
+        "MonsterID": "Battle1_Normal2_Normal1",
+        "TID": 106000037
+    },
+    {
+        "ID": "Battle1_Normal4_Spawn2",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal4",
+        "SpawnTime": 4,
+        "MonsterID": "Battle1_Normal2_Normal1",
+        "TID": 106000038
+    },
+    {
+        "ID": "Battle1_Normal4_Spawn3",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal4",
+        "SpawnTime": 7,
+        "MonsterID": "Battle1_Normal2_Normal1",
+        "TID": 106000039
+    },
+    {
+        "ID": "Battle1_Normal4_Spawn4",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal4",
+        "SpawnTime": 10,
+        "MonsterID": "Battle1_Normal2_Normal1",
+        "TID": 106000040
+    },
+    {
+        "ID": "Battle1_Normal4_Spawn5",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal4",
+        "SpawnTime": 12,
+        "MonsterID": "Battle1_Normal2_Normal1",
+        "TID": 106000041
+    },
+    {
+        "ID": "Battle1_Normal4_Spawn6",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal4",
+        "SpawnTime": 14,
+        "MonsterID": "Battle1_Normal2_Normal2",
+        "TID": 106000042
+    },
+    {
+        "ID": "Battle1_Normal4_Spawn7",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal4",
+        "SpawnTime": 16,
+        "MonsterID": "Battle1_Normal2_Normal2",
+        "TID": 106000043
+    },
+    {
+        "ID": "Battle1_Normal4_Spawn8",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal4",
+        "SpawnTime": 17,
+        "MonsterID": "Battle1_Normal2_Normal3",
+        "TID": 106000044
+    },
+    {
+        "ID": "Battle1_Normal4_Spawn9",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal4",
+        "SpawnTime": 18,
+        "MonsterID": "Battle1_Normal2_Normal3",
+        "TID": 106000045
+    },
+    {
+        "ID": "Battle1_Normal4_Spawn10",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal4",
+        "SpawnTime": 19,
+        "MonsterID": "Battle1_Normal2_Normal3",
+        "TID": 106000046
+    },
+    {
+        "ID": "Battle1_Normal4_Spawn11",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal4",
+        "SpawnTime": 20,
+        "MonsterID": "Battle1_Normal2_Normal3",
+        "TID": 106000047
+    },
+    {
+        "ID": "Battle1_Normal4_Spawn12",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Normal4",
+        "SpawnTime": 21,
+        "MonsterID": "Battle1_Normal2_Normal3",
+        "TID": 106000048
+    },
+    {
+        "ID": "Battle1_Boss1_Spawn1",
+        "SpawnGroupID": "SpawnGroup_Battle_1_Boss1",
+        "SpawnTime": 1,
+        "MonsterID": "Battle1_Boss1_Boss1",
+        "TID": 106000049
+    },
+    {
+        "ID": "Battle2_Normal1_Spawn1",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal1",
+        "SpawnTime": 1,
+        "MonsterID": "Battle2_Normal1_Normal1",
+        "TID": 106000050
+    },
+    {
+        "ID": "Battle2_Normal1_Spawn2",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal1",
+        "SpawnTime": 4,
+        "MonsterID": "Battle2_Normal1_Normal1",
+        "TID": 106000051
+    },
+    {
+        "ID": "Battle2_Normal1_Spawn3",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal1",
+        "SpawnTime": 7,
+        "MonsterID": "Battle2_Normal1_Normal1",
+        "TID": 106000052
+    },
+    {
+        "ID": "Battle2_Normal1_Spawn4",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal1",
+        "SpawnTime": 9,
+        "MonsterID": "Battle2_Normal1_Normal2",
+        "TID": 106000053
+    },
+    {
+        "ID": "Battle2_Normal1_Spawn5",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal1",
+        "SpawnTime": 11,
+        "MonsterID": "Battle2_Normal1_Normal2",
+        "TID": 106000054
+    },
+    {
+        "ID": "Battle2_Normal1_Spawn6",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal1",
+        "SpawnTime": 13,
+        "MonsterID": "Battle3_Normal1_Normal4",
+        "TID": 106000055
+    },
+    {
+        "ID": "Battle2_Normal1_Spawn7",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal1",
+        "SpawnTime": 15,
+        "MonsterID": "Battle2_Normal1_Normal2",
+        "TID": 106000056
+    },
+    {
+        "ID": "Battle2_Normal1_Spawn8",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal1",
+        "SpawnTime": 17,
+        "MonsterID": "Battle2_Normal1_Normal2",
+        "TID": 106000057
+    },
+    {
+        "ID": "Battle2_Normal1_Spawn9",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal1",
+        "SpawnTime": 18,
+        "MonsterID": "Battle2_Normal1_Normal3",
+        "TID": 106000058
+    },
+    {
+        "ID": "Battle2_Normal1_Spawn10",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal1",
+        "SpawnTime": 19,
+        "MonsterID": "Battle2_Normal1_Normal3",
+        "TID": 106000059
+    },
+    {
+        "ID": "Battle2_Normal1_Spawn11",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal1",
+        "SpawnTime": 20,
+        "MonsterID": "Battle2_Normal1_Normal3",
+        "TID": 106000060
+    },
+    {
+        "ID": "Battle2_Normal1_Spawn12",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal1",
+        "SpawnTime": 21,
+        "MonsterID": "Battle2_Normal1_Normal3",
+        "TID": 106000061
+    },
+    {
+        "ID": "Battle2_Normal1_Spawn13",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal1",
+        "SpawnTime": 22,
+        "MonsterID": "Battle2_Normal1_Normal3",
+        "TID": 106000062
+    },
+    {
+        "ID": "Battle2_Normal1_Spawn14",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal1",
+        "SpawnTime": 23,
+        "MonsterID": "Battle2_Normal1_Normal3",
+        "TID": 106000063
+    },
+    {
+        "ID": "Battle2_Normal2_Spawn1",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal2",
+        "SpawnTime": 1,
+        "MonsterID": "Battle2_Normal2_Normal1",
+        "TID": 106000064
+    },
+    {
+        "ID": "Battle2_Normal2_Spawn2",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal2",
+        "SpawnTime": 4,
+        "MonsterID": "Battle2_Normal2_Normal1",
+        "TID": 106000065
+    },
+    {
+        "ID": "Battle2_Normal2_Spawn3",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal2",
+        "SpawnTime": 7,
+        "MonsterID": "Battle2_Normal2_Normal1",
+        "TID": 106000066
+    },
+    {
+        "ID": "Battle2_Normal2_Spawn4",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal2",
+        "SpawnTime": 9,
+        "MonsterID": "Battle2_Normal2_Normal2",
+        "TID": 106000067
+    },
+    {
+        "ID": "Battle2_Normal2_Spawn5",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal2",
+        "SpawnTime": 11,
+        "MonsterID": "Battle2_Normal2_Normal2",
+        "TID": 106000068
+    },
+    {
+        "ID": "Battle2_Normal2_Spawn6",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal2",
+        "SpawnTime": 13,
+        "MonsterID": "Battle2_Normal2_Normal4",
+        "TID": 106000069
+    },
+    {
+        "ID": "Battle2_Normal2_Spawn7",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal2",
+        "SpawnTime": 15,
+        "MonsterID": "Battle2_Normal2_Normal2",
+        "TID": 106000070
+    },
+    {
+        "ID": "Battle2_Normal2_Spawn8",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal2",
+        "SpawnTime": 17,
+        "MonsterID": "Battle2_Normal2_Normal2",
+        "TID": 106000071
+    },
+    {
+        "ID": "Battle2_Normal2_Spawn9",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal2",
+        "SpawnTime": 18,
+        "MonsterID": "Battle2_Normal2_Normal3",
+        "TID": 106000072
+    },
+    {
+        "ID": "Battle2_Normal2_Spawn10",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal2",
+        "SpawnTime": 19,
+        "MonsterID": "Battle2_Normal2_Normal3",
+        "TID": 106000073
+    },
+    {
+        "ID": "Battle2_Normal2_Spawn11",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal2",
+        "SpawnTime": 20,
+        "MonsterID": "Battle2_Normal2_Normal4",
+        "TID": 106000074
+    },
+    {
+        "ID": "Battle2_Normal2_Spawn12",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal2",
+        "SpawnTime": 21,
+        "MonsterID": "Battle2_Normal2_Normal3",
+        "TID": 106000075
+    },
+    {
+        "ID": "Battle2_Normal2_Spawn13",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal2",
+        "SpawnTime": 22,
+        "MonsterID": "Battle2_Normal2_Normal3",
+        "TID": 106000076
+    },
+    {
+        "ID": "Battle2_Normal2_Spawn14",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Normal2",
+        "SpawnTime": 23,
+        "MonsterID": "Battle2_Normal2_Normal3",
+        "TID": 106000077
+    },
+    {
+        "ID": "Battle2_Boss1_Spawn1",
+        "SpawnGroupID": "SpawnGroup_Battle_2_Boss1",
+        "SpawnTime": 1,
+        "MonsterID": "Battle2_Boss1_Boss1",
+        "TID": 106000078
+    },
+    {
+        "ID": "Battle3_Normal1_Spawn1",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal1",
+        "SpawnTime": 1,
+        "MonsterID": "Battle3_Normal1_Normal1",
+        "TID": 106000079
+    },
+    {
+        "ID": "Battle3_Normal1_Spawn2",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal1",
+        "SpawnTime": 3,
+        "MonsterID": "Battle3_Normal1_Normal1",
+        "TID": 106000080
+    },
+    {
+        "ID": "Battle3_Normal1_Spawn3",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal1",
+        "SpawnTime": 5,
+        "MonsterID": "Battle3_Normal1_Normal4",
+        "TID": 106000081
+    },
+    {
+        "ID": "Battle3_Normal1_Spawn4",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal1",
+        "SpawnTime": 7,
+        "MonsterID": "Battle3_Normal1_Normal1",
+        "TID": 106000082
+    },
+    {
+        "ID": "Battle3_Normal1_Spawn5",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal1",
+        "SpawnTime": 8,
+        "MonsterID": "Battle3_Normal1_Normal2",
+        "TID": 106000083
+    },
+    {
+        "ID": "Battle3_Normal1_Spawn6",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal1",
+        "SpawnTime": 9,
+        "MonsterID": "Battle3_Normal1_Normal2",
+        "TID": 106000084
+    },
+    {
+        "ID": "Battle3_Normal1_Spawn7",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal1",
+        "SpawnTime": 10,
+        "MonsterID": "Battle3_Normal1_Normal2",
+        "TID": 106000085
+    },
+    {
+        "ID": "Battle3_Normal1_Spawn8",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal1",
+        "SpawnTime": 11,
+        "MonsterID": "Battle3_Normal1_Normal4",
+        "TID": 106000086
+    },
+    {
+        "ID": "Battle3_Normal1_Spawn9",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal1",
+        "SpawnTime": 12,
+        "MonsterID": "Battle3_Normal1_Normal2",
+        "TID": 106000087
+    },
+    {
+        "ID": "Battle3_Normal1_Spawn10",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal1",
+        "SpawnTime": 13,
+        "MonsterID": "Battle3_Normal1_Normal2",
+        "TID": 106000088
+    },
+    {
+        "ID": "Battle3_Normal1_Spawn11",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal1",
+        "SpawnTime": 14,
+        "MonsterID": "Battle3_Normal1_Normal2",
+        "TID": 106000089
+    },
+    {
+        "ID": "Battle3_Normal1_Spawn12",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal1",
+        "SpawnTime": 15,
+        "MonsterID": "Battle3_Normal1_Normal2",
+        "TID": 106000090
+    },
+    {
+        "ID": "Battle3_Normal1_Spawn13",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal1",
+        "SpawnTime": 16,
+        "MonsterID": "Battle3_Normal1_Normal2",
+        "TID": 106000091
+    },
+    {
+        "ID": "Battle3_Normal1_Spawn14",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal1",
+        "SpawnTime": 17,
+        "MonsterID": "Battle3_Normal1_Normal2",
+        "TID": 106000092
+    },
+    {
+        "ID": "Battle3_Normal1_Spawn15",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal1",
+        "SpawnTime": 17.5,
+        "MonsterID": "Battle3_Normal1_Normal3",
+        "TID": 106000093
+    },
+    {
+        "ID": "Battle3_Normal1_Spawn16",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal1",
+        "SpawnTime": 18,
+        "MonsterID": "Battle3_Normal1_Normal3",
+        "TID": 106000094
+    },
+    {
+        "ID": "Battle3_Normal1_Spawn17",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal1",
+        "SpawnTime": 18.5,
+        "MonsterID": "Battle3_Normal1_Normal3",
+        "TID": 106000095
+    },
+    {
+        "ID": "Battle3_Normal1_Spawn18",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal1",
+        "SpawnTime": 19,
+        "MonsterID": "Battle3_Normal1_Normal3",
+        "TID": 106000096
+    },
+    {
+        "ID": "Battle3_Normal1_Spawn19",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal1",
+        "SpawnTime": 19.5,
+        "MonsterID": "Battle3_Normal1_Normal3",
+        "TID": 106000097
+    },
+    {
+        "ID": "Battle3_Normal1_Spawn20",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal1",
+        "SpawnTime": 20,
+        "MonsterID": "Battle3_Normal1_Normal3",
+        "TID": 106000098
+    },
+    {
+        "ID": "Battle3_Normal2_Spawn1",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal2",
+        "SpawnTime": 1,
+        "MonsterID": "Battle3_Normal2_Normal1",
+        "TID": 106000099
+    },
+    {
+        "ID": "Battle3_Normal2_Spawn2",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal2",
+        "SpawnTime": 3,
+        "MonsterID": "Battle3_Normal2_Normal1",
+        "TID": 106000100
+    },
+    {
+        "ID": "Battle3_Normal2_Spawn3",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal2",
+        "SpawnTime": 5,
+        "MonsterID": "Battle3_Normal2_Normal4",
+        "TID": 106000101
+    },
+    {
+        "ID": "Battle3_Normal2_Spawn4",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal2",
+        "SpawnTime": 7,
+        "MonsterID": "Battle3_Normal2_Normal1",
+        "TID": 106000102
+    },
+    {
+        "ID": "Battle3_Normal2_Spawn5",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal2",
+        "SpawnTime": 8,
+        "MonsterID": "Battle3_Normal2_Normal2",
+        "TID": 106000103
+    },
+    {
+        "ID": "Battle3_Normal2_Spawn6",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal2",
+        "SpawnTime": 9,
+        "MonsterID": "Battle3_Normal2_Normal2",
+        "TID": 106000104
+    },
+    {
+        "ID": "Battle3_Normal2_Spawn7",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal2",
+        "SpawnTime": 10,
+        "MonsterID": "Battle3_Normal2_Normal2",
+        "TID": 106000105
+    },
+    {
+        "ID": "Battle3_Normal2_Spawn8",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal2",
+        "SpawnTime": 11,
+        "MonsterID": "Battle3_Normal2_Normal2",
+        "TID": 106000106
+    },
+    {
+        "ID": "Battle3_Normal2_Spawn9",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal2",
+        "SpawnTime": 12,
+        "MonsterID": "Battle3_Normal2_Normal4",
+        "TID": 106000107
+    },
+    {
+        "ID": "Battle3_Normal2_Spawn10",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal2",
+        "SpawnTime": 13,
+        "MonsterID": "Battle3_Normal2_Normal2",
+        "TID": 106000108
+    },
+    {
+        "ID": "Battle3_Normal2_Spawn11",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal2",
+        "SpawnTime": 14,
+        "MonsterID": "Battle3_Normal2_Normal2",
+        "TID": 106000109
+    },
+    {
+        "ID": "Battle3_Normal2_Spawn12",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal2",
+        "SpawnTime": 15,
+        "MonsterID": "Battle3_Normal2_Normal2",
+        "TID": 106000110
+    },
+    {
+        "ID": "Battle3_Normal2_Spawn13",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal2",
+        "SpawnTime": 15.5,
+        "MonsterID": "Battle3_Normal2_Normal3",
+        "TID": 106000111
+    },
+    {
+        "ID": "Battle3_Normal2_Spawn14",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal2",
+        "SpawnTime": 16,
+        "MonsterID": "Battle3_Normal2_Normal3",
+        "TID": 106000112
+    },
+    {
+        "ID": "Battle3_Normal2_Spawn15",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal2",
+        "SpawnTime": 16.5,
+        "MonsterID": "Battle3_Normal2_Normal3",
+        "TID": 106000113
+    },
+    {
+        "ID": "Battle3_Normal2_Spawn16",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal2",
+        "SpawnTime": 17,
+        "MonsterID": "Battle3_Normal2_Normal3",
+        "TID": 106000114
+    },
+    {
+        "ID": "Battle3_Normal2_Spawn17",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal2",
+        "SpawnTime": 17.5,
+        "MonsterID": "Battle3_Normal2_Normal4",
+        "TID": 106000115
+    },
+    {
+        "ID": "Battle3_Normal2_Spawn18",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal2",
+        "SpawnTime": 18,
+        "MonsterID": "Battle3_Normal2_Normal3",
+        "TID": 106000116
+    },
+    {
+        "ID": "Battle3_Normal2_Spawn19",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal2",
+        "SpawnTime": 18.5,
+        "MonsterID": "Battle3_Normal2_Normal3",
+        "TID": 106000117
+    },
+    {
+        "ID": "Battle3_Normal2_Spawn20",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Normal2",
+        "SpawnTime": 19,
+        "MonsterID": "Battle3_Normal2_Normal3",
+        "TID": 106000118
+    },
+    {
+        "ID": "Battle3_Boss1_Spawn1",
+        "SpawnGroupID": "SpawnGroup_Battle_3_Boss1",
+        "SpawnTime": 1,
+        "MonsterID": "Battle3_Boss1_Boss1",
+        "TID": 106000119
+    },
+    {
+        "ID": "Battle4_Normal1_Spawn1",
+        "SpawnGroupID": "SpawnGroup_Battle_4_Normal1",
+        "SpawnTime": 0.5,
+        "MonsterID": "Battle4_Normal1_Normal1",
+        "TID": 106000120
+    },
+    {
+        "ID": "Battle4_Normal1_Spawn2",
+        "SpawnGroupID": "SpawnGroup_Battle_4_Normal1",
+        "SpawnTime": 1,
+        "MonsterID": "Battle4_Normal1_Normal1",
+        "TID": 106000121
+    },
+    {
+        "ID": "Battle4_Normal1_Spawn3",
+        "SpawnGroupID": "SpawnGroup_Battle_4_Normal1",
+        "SpawnTime": 1.5,
+        "MonsterID": "Battle4_Normal1_Normal1",
+        "TID": 106000122
+    },
+    {
+        "ID": "Battle4_Normal1_Spawn4",
+        "SpawnGroupID": "SpawnGroup_Battle_4_Normal1",
+        "SpawnTime": 2,
+        "MonsterID": "Battle4_Normal1_Normal1",
+        "TID": 106000123
+    },
+    {
+        "ID": "Battle4_Normal1_Spawn5",
+        "SpawnGroupID": "SpawnGroup_Battle_4_Normal1",
+        "SpawnTime": 2.5,
+        "MonsterID": "Battle4_Normal1_Normal2",
+        "TID": 106000124
+    },
+    {
+        "ID": "Battle4_Normal1_Spawn6",
+        "SpawnGroupID": "SpawnGroup_Battle_4_Normal1",
+        "SpawnTime": 3,
+        "MonsterID": "Battle4_Normal1_Normal2",
+        "TID": 106000125
+    },
+    {
+        "ID": "Battle4_Normal1_Spawn7",
+        "SpawnGroupID": "SpawnGroup_Battle_4_Normal1",
+        "SpawnTime": 3.5,
+        "MonsterID": "Battle4_Normal1_Normal2",
+        "TID": 106000126
+    },
+    {
+        "ID": "Battle4_Normal1_Spawn8",
+        "SpawnGroupID": "SpawnGroup_Battle_4_Normal1",
+        "SpawnTime": 4,
+        "MonsterID": "Battle4_Normal1_Normal3",
+        "TID": 106000127
+    },
+    {
+        "ID": "Battle4_Normal1_Spawn9",
+        "SpawnGroupID": "SpawnGroup_Battle_4_Normal1",
+        "SpawnTime": 4.5,
+        "MonsterID": "Battle4_Normal1_Normal3",
+        "TID": 106000128
+    },
+    {
+        "ID": "Battle4_Normal1_Spawn10",
+        "SpawnGroupID": "SpawnGroup_Battle_4_Normal1",
+        "SpawnTime": 5,
+        "MonsterID": "Battle4_Normal1_Normal3",
+        "TID": 106000129
+    },
+    {
+        "ID": "Battle4_Normal2_Spawn1",
+        "SpawnGroupID": "SpawnGroup_Battle_4_Normal2",
+        "SpawnTime": 0.5,
+        "MonsterID": "Battle4_Normal2_Normal1",
+        "TID": 106000130
+    },
+    {
+        "ID": "Battle4_Normal2_Spawn2",
+        "SpawnGroupID": "SpawnGroup_Battle_4_Normal2",
+        "SpawnTime": 1,
+        "MonsterID": "Battle4_Normal2_Normal1",
+        "TID": 106000131
+    },
+    {
+        "ID": "Battle4_Normal2_Spawn3",
+        "SpawnGroupID": "SpawnGroup_Battle_4_Normal2",
+        "SpawnTime": 1.5,
+        "MonsterID": "Battle4_Normal2_Normal1",
+        "TID": 106000132
+    },
+    {
+        "ID": "Battle4_Normal2_Spawn4",
+        "SpawnGroupID": "SpawnGroup_Battle_4_Normal2",
+        "SpawnTime": 2,
+        "MonsterID": "Battle4_Normal2_Normal1",
+        "TID": 106000133
+    },
+    {
+        "ID": "Battle4_Normal2_Spawn5",
+        "SpawnGroupID": "SpawnGroup_Battle_4_Normal2",
+        "SpawnTime": 2.5,
+        "MonsterID": "Battle4_Normal2_Normal1",
+        "TID": 106000134
+    },
+    {
+        "ID": "Battle4_Normal2_Spawn6",
+        "SpawnGroupID": "SpawnGroup_Battle_4_Normal2",
+        "SpawnTime": 3,
+        "MonsterID": "Battle4_Normal2_Normal2",
+        "TID": 106000135
+    },
+    {
+        "ID": "Battle4_Normal2_Spawn7",
+        "SpawnGroupID": "SpawnGroup_Battle_4_Normal2",
+        "SpawnTime": 3.5,
+        "MonsterID": "Battle4_Normal2_Normal2",
+        "TID": 106000136
+    },
+    {
+        "ID": "Battle4_Normal2_Spawn8",
+        "SpawnGroupID": "SpawnGroup_Battle_4_Normal2",
+        "SpawnTime": 4,
+        "MonsterID": "Battle4_Normal2_Normal3",
+        "TID": 106000137
+    },
+    {
+        "ID": "Battle4_Normal2_Spawn9",
+        "SpawnGroupID": "SpawnGroup_Battle_4_Normal2",
+        "SpawnTime": 4.5,
+        "MonsterID": "Battle4_Normal2_Normal3",
+        "TID": 106000138
+    },
+    {
+        "ID": "Battle4_Normal2_Spawn10",
+        "SpawnGroupID": "SpawnGroup_Battle_4_Normal2",
+        "SpawnTime": 5,
+        "MonsterID": "Battle4_Normal2_Normal3",
+        "TID": 106000139
+    },
+    {
+        "ID": "Battle4_Boss1_Spawn1",
+        "SpawnGroupID": "SpawnGroup_Battle_4_Boss1",
+        "SpawnTime": 3,
+        "MonsterID": "Battle4_Boss1_Boss1",
+        "TID": 106000140
+    },
+    {
+        "ID": "Battle5_Normal1_Spawn1",
+        "SpawnGroupID": "SpawnGroup_Battle_5_Normal1",
+        "SpawnTime": 0.5,
+        "MonsterID": "Battle5_Normal1_Normal1",
+        "TID": 106000141
+    },
+    {
+        "ID": "Battle5_Normal1_Spawn2",
+        "SpawnGroupID": "SpawnGroup_Battle_5_Normal1",
+        "SpawnTime": 1,
+        "MonsterID": "Battle5_Normal1_Normal1",
+        "TID": 106000142
+    },
+    {
+        "ID": "Battle5_Normal1_Spawn3",
+        "SpawnGroupID": "SpawnGroup_Battle_5_Normal1",
+        "SpawnTime": 1.5,
+        "MonsterID": "Battle5_Normal1_Normal1",
+        "TID": 106000143
+    },
+    {
+        "ID": "Battle5_Normal1_Spawn4",
+        "SpawnGroupID": "SpawnGroup_Battle_5_Normal1",
+        "SpawnTime": 2,
+        "MonsterID": "Battle5_Normal1_Normal1",
+        "TID": 106000144
+    },
+    {
+        "ID": "Battle5_Normal1_Spawn5",
+        "SpawnGroupID": "SpawnGroup_Battle_5_Normal1",
+        "SpawnTime": 2.5,
+        "MonsterID": "Battle5_Normal1_Normal1",
+        "TID": 106000145
+    },
+    {
+        "ID": "Battle5_Normal1_Spawn6",
+        "SpawnGroupID": "SpawnGroup_Battle_5_Normal1",
+        "SpawnTime": 3,
+        "MonsterID": "Battle5_Normal1_Normal1",
+        "TID": 106000146
+    },
+    {
+        "ID": "Battle5_Normal1_Spawn7",
+        "SpawnGroupID": "SpawnGroup_Battle_5_Normal1",
+        "SpawnTime": 3.5,
+        "MonsterID": "Battle5_Normal1_Normal1",
+        "TID": 106000147
+    },
+    {
+        "ID": "Battle5_Normal1_Spawn8",
+        "SpawnGroupID": "SpawnGroup_Battle_5_Normal1",
+        "SpawnTime": 4,
+        "MonsterID": "Battle5_Normal1_Normal1",
+        "TID": 106000148
+    },
+    {
+        "ID": "Battle5_Normal1_Spawn9",
+        "SpawnGroupID": "SpawnGroup_Battle_5_Normal1",
+        "SpawnTime": 4.5,
+        "MonsterID": "Battle5_Normal1_Normal1",
+        "TID": 106000149
+    },
+    {
+        "ID": "Battle5_Normal1_Spawn10",
+        "SpawnGroupID": "SpawnGroup_Battle_5_Normal1",
+        "SpawnTime": 5,
+        "MonsterID": "Battle5_Normal1_Normal1",
+        "TID": 106000150
+    },
+    {
+        "ID": "Battle5_Normal2_Spawn1",
+        "SpawnGroupID": "SpawnGroup_Battle_5_Normal2",
+        "SpawnTime": 0.5,
+        "MonsterID": "Battle5_Normal2_Normal2",
+        "TID": 106000151
+    },
+    {
+        "ID": "Battle5_Normal2_Spawn2",
+        "SpawnGroupID": "SpawnGroup_Battle_5_Normal2",
+        "SpawnTime": 1,
+        "MonsterID": "Battle5_Normal2_Normal2",
+        "TID": 106000152
+    },
+    {
+        "ID": "Battle5_Normal2_Spawn3",
+        "SpawnGroupID": "SpawnGroup_Battle_5_Normal2",
+        "SpawnTime": 1.5,
+        "MonsterID": "Battle5_Normal2_Normal2",
+        "TID": 106000153
+    },
+    {
+        "ID": "Battle5_Normal2_Spawn4",
+        "SpawnGroupID": "SpawnGroup_Battle_5_Normal2",
+        "SpawnTime": 2,
+        "MonsterID": "Battle5_Normal2_Normal2",
+        "TID": 106000154
+    },
+    {
+        "ID": "Battle5_Normal2_Spawn5",
+        "SpawnGroupID": "SpawnGroup_Battle_5_Normal2",
+        "SpawnTime": 2.5,
+        "MonsterID": "Battle5_Normal2_Normal2",
+        "TID": 106000155
+    },
+    {
+        "ID": "Battle5_Normal2_Spawn6",
+        "SpawnGroupID": "SpawnGroup_Battle_5_Normal2",
+        "SpawnTime": 3,
+        "MonsterID": "Battle5_Normal2_Normal2",
+        "TID": 106000156
+    },
+    {
+        "ID": "Battle5_Normal2_Spawn7",
+        "SpawnGroupID": "SpawnGroup_Battle_5_Normal2",
+        "SpawnTime": 3.5,
+        "MonsterID": "Battle5_Normal2_Normal2",
+        "TID": 106000157
+    },
+    {
+        "ID": "Battle5_Normal2_Spawn8",
+        "SpawnGroupID": "SpawnGroup_Battle_5_Normal2",
+        "SpawnTime": 4,
+        "MonsterID": "Battle5_Normal2_Normal2",
+        "TID": 106000158
+    },
+    {
+        "ID": "Battle5_Normal2_Spawn9",
+        "SpawnGroupID": "SpawnGroup_Battle_5_Normal2",
+        "SpawnTime": 4.5,
+        "MonsterID": "Battle5_Normal2_Normal2",
+        "TID": 106000159
+    },
+    {
+        "ID": "Battle5_Normal2_Spawn10",
+        "SpawnGroupID": "SpawnGroup_Battle_5_Normal2",
+        "SpawnTime": 5,
+        "MonsterID": "Battle5_Normal2_Normal2",
+        "TID": 106000160
+    },
+    {
+        "ID": "Battle5_Boss1_Spawn1",
+        "SpawnGroupID": "SpawnGroup_Battle_5_Boss1",
+        "SpawnTime": 3,
+        "MonsterID": "Battle5_Boss1_Boss1",
+        "TID": 106000161
+    }
+]

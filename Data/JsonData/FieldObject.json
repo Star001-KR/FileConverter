@@ -1,0 +1,86 @@
+[
+    {
+        "ID": "Object_Hero_Name1",
+        "ObjectType": "Hero",
+        "IconPath": "Common/Icon_Doll.png",
+        "ObjectPath": "SimplePeople_Hero",
+        "TID": 102000001
+    },
+    {
+        "ID": "Object_Hero_Name2",
+        "ObjectType": "Hero",
+        "IconPath": "Common/Icon_Doll.png",
+        "ObjectPath": "SimplePeople_Hero",
+        "TID": 102000002
+    },
+    {
+        "ID": "Object_Hero_Name3",
+        "ObjectType": "Hero",
+        "IconPath": "Common/Icon_Doll.png",
+        "ObjectPath": "SimplePeople_Hero",
+        "TID": 102000003
+    },
+    {
+        "ID": "Object_Hero_Name4",
+        "ObjectType": "Hero",
+        "IconPath": "Common/Icon_Doll.png",
+        "ObjectPath": "SimplePeople_Hero",
+        "TID": 102000004
+    },
+    {
+        "ID": "Object_Hero_Name5",
+        "ObjectType": "Hero",
+        "IconPath": "Common/Icon_Doll.png",
+        "ObjectPath": "SimplePeople_Hero",
+        "TID": 102000005
+    },
+    {
+        "ID": "Object_Hero_Name6",
+        "ObjectType": "Hero",
+        "IconPath": "Common/Icon_Doll.png",
+        "ObjectPath": "SimplePeople_Hero",
+        "TID": 102000006
+    },
+    {
+        "ID": "Object_Tower_Name1",
+        "ObjectType": "Tower",
+        "IconPath": "Common/Icon_Tower.png",
+        "ObjectPath": "SimplePeople_Tower",
+        "TID": 102000007
+    },
+    {
+        "ID": "Object_Tower_Name2",
+        "ObjectType": "Tower",
+        "IconPath": "Common/Icon_Tower.png",
+        "ObjectPath": "SimplePeople_Tower",
+        "TID": 102000008
+    },
+    {
+        "ID": "Object_Tower_Name3",
+        "ObjectType": "Tower",
+        "IconPath": "Common/Icon_Tower.png",
+        "ObjectPath": "SimplePeople_Tower",
+        "TID": 102000009
+    },
+    {
+        "ID": "Object_Tower_Name4",
+        "ObjectType": "Tower",
+        "IconPath": "Common/Icon_Tower.png",
+        "ObjectPath": "SimplePeople_Tower",
+        "TID": 102000010
+    },
+    {
+        "ID": "Object_Tower_Name5",
+        "ObjectType": "Tower",
+        "IconPath": "Common/Icon_Tower.png",
+        "ObjectPath": "SimplePeople_Tower",
+        "TID": 102000011
+    },
+    {
+        "ID": "Object_Tower_Name6",
+        "ObjectType": "Tower",
+        "IconPath": "Common/Icon_Tower.png",
+        "ObjectPath": "SimplePeople_Tower",
+        "TID": 102000012
+    }
+]

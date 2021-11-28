@@ -62,12 +62,13 @@ class Convert(Excel):
         assert (dataName in self._dataNameList), f'err : {dataName} is not in data name list.'
 
         self._lastTidDict[dataName] += 1
+        _tid = self._dataIdDict[dataName] * 1000000 + self._lastTidDict[dataName]
         
         assert (self._lastTidDict[dataName] <= 999999), f'err : {dataName} tid overflow.'
 
         Set_ConfigToJson(EConfigType.last_tid, dataName, self._lastTidDict[dataName])
         
-        return self._lastTidDict[dataName]
+        return _tid
 
 
     @deco_usedirmethod(EDirectory.jsonDirectory)
@@ -95,28 +96,36 @@ class Convert(Excel):
                 
                     except:
                         pass
+        
+        _dumpList = []
+        _rowData = {}
+        
+        for row in range(self._columnTypeNum + 1, self.Get_LenExcelRows(dataName)):
+            _rowData.clear()
 
-        if not len(allJsonTidDict):
-            _dumpList = []
-            _rowData = {}
+            _columnNum = 0
+            while True:
+                _value = self.Get_ExcelValue(dataName, row, _columnNum)
 
-            for row in range(self._columnTypeNum + 1, self.Get_LenExcelRows(dataName)):
-                _rowData.clear()
-                
-                _columnNum = 0
-                while True:
-                    _value = self.Get_ExcelValue(dataName, row, _columnNum)
+                if not _value:
+                    if _columnNum < max(self.Get_NotNullableColumnList(dataName)):
+                        _value = ""
+                        
+                    else:
+                        if _rowData[self.keyColumnName] in allJsonTidDict.keys():
+                            _rowData[self.tidString] = allJsonTidDict[_rowData[self.keyColumnName]]
 
-                    if (not _value) and (not _columnNum in self.Get_NotNullableColumnList(dataName)):
-                        _rowData[self.tidString] = self.Create_Tid(dataName)
+                        else:
+                            _rowData[self.tidString] = self.Create_Tid(dataName)
+                        
                         _dumpList.append(dict(_rowData))
+
                         break
 
-                    else:
-                        if _columnNum in self.Get_NotNullableColumnList(dataName):
-                            _rowData[self.Get_ExcelValue(dataName, self._columnNameNum, _columnNum)] = _value
-                        
-                        _columnNum += 1
+                if not str(self.Get_ExcelValue(dataName, self.columnNameNum, _columnNum)).startswith('#'):
+                    _rowData[self.Get_ExcelValue(dataName, self._columnNameNum, _columnNum)] = _value
+                
+                _columnNum += 1
 
         with open (_jsonPath, 'w') as file:
             json.dump(_dumpList, file, indent = 4)

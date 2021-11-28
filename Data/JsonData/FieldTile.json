@@ -1,0 +1,544 @@
+[
+    {
+        "ID": "FieldGroup_1_1_1",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 1,
+        "TilePosY": 1,
+        "TileType": "Monster",
+        "isTileSpawnPoint": true,
+        "TID": 104000001
+    },
+    {
+        "ID": "FieldGroup_1_2_1",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 2,
+        "TilePosY": 1,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000002
+    },
+    {
+        "ID": "FieldGroup_1_3_1",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 3,
+        "TilePosY": 1,
+        "TileType": "Object",
+        "isTileSpawnPoint": "",
+        "TID": 104000003
+    },
+    {
+        "ID": "FieldGroup_1_4_1",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 4,
+        "TilePosY": 1,
+        "TileType": "Object",
+        "isTileSpawnPoint": "",
+        "TID": 104000004
+    },
+    {
+        "ID": "FieldGroup_1_5_1",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 5,
+        "TilePosY": 1,
+        "TileType": "Object",
+        "isTileSpawnPoint": "",
+        "TID": 104000005
+    },
+    {
+        "ID": "FieldGroup_1_6_1",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 6,
+        "TilePosY": 1,
+        "TileType": "Empty",
+        "isTileSpawnPoint": "",
+        "TID": 104000006
+    },
+    {
+        "ID": "FieldGroup_1_1_2",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 1,
+        "TilePosY": 2,
+        "TileType": "Empty",
+        "isTileSpawnPoint": "",
+        "TID": 104000007
+    },
+    {
+        "ID": "FieldGroup_1_2_2",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 2,
+        "TilePosY": 2,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000008
+    },
+    {
+        "ID": "FieldGroup_1_3_2",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 3,
+        "TilePosY": 2,
+        "TileType": "Object",
+        "isTileSpawnPoint": "",
+        "TID": 104000009
+    },
+    {
+        "ID": "FieldGroup_1_4_2",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 4,
+        "TilePosY": 2,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000010
+    },
+    {
+        "ID": "FieldGroup_1_5_2",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 5,
+        "TilePosY": 2,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000011
+    },
+    {
+        "ID": "FieldGroup_1_6_2",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 6,
+        "TilePosY": 2,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000012
+    },
+    {
+        "ID": "FieldGroup_1_1_3",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 1,
+        "TilePosY": 3,
+        "TileType": "Empty",
+        "isTileSpawnPoint": "",
+        "TID": 104000013
+    },
+    {
+        "ID": "FieldGroup_1_2_3",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 2,
+        "TilePosY": 3,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000014
+    },
+    {
+        "ID": "FieldGroup_1_3_3",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 3,
+        "TilePosY": 3,
+        "TileType": "Object",
+        "isTileSpawnPoint": "",
+        "TID": 104000015
+    },
+    {
+        "ID": "FieldGroup_1_4_3",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 4,
+        "TilePosY": 3,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000016
+    },
+    {
+        "ID": "FieldGroup_1_5_3",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 5,
+        "TilePosY": 3,
+        "TileType": "Empty",
+        "isTileSpawnPoint": "",
+        "TID": 104000017
+    },
+    {
+        "ID": "FieldGroup_1_6_3",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 6,
+        "TilePosY": 3,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000018
+    },
+    {
+        "ID": "FieldGroup_1_1_4",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 1,
+        "TilePosY": 4,
+        "TileType": "Empty",
+        "isTileSpawnPoint": "",
+        "TID": 104000019
+    },
+    {
+        "ID": "FieldGroup_1_2_4",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 2,
+        "TilePosY": 4,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000020
+    },
+    {
+        "ID": "FieldGroup_1_3_4",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 3,
+        "TilePosY": 4,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000021
+    },
+    {
+        "ID": "FieldGroup_1_4_4",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 4,
+        "TilePosY": 4,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000022
+    },
+    {
+        "ID": "FieldGroup_1_5_4",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 5,
+        "TilePosY": 4,
+        "TileType": "Object",
+        "isTileSpawnPoint": "",
+        "TID": 104000023
+    },
+    {
+        "ID": "FieldGroup_1_6_4",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 6,
+        "TilePosY": 4,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000024
+    },
+    {
+        "ID": "FieldGroup_1_1_5",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 1,
+        "TilePosY": 5,
+        "TileType": "Object",
+        "isTileSpawnPoint": "",
+        "TID": 104000025
+    },
+    {
+        "ID": "FieldGroup_1_2_5",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 2,
+        "TilePosY": 5,
+        "TileType": "Object",
+        "isTileSpawnPoint": "",
+        "TID": 104000026
+    },
+    {
+        "ID": "FieldGroup_1_3_5",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 3,
+        "TilePosY": 5,
+        "TileType": "Object",
+        "isTileSpawnPoint": "",
+        "TID": 104000027
+    },
+    {
+        "ID": "FieldGroup_1_4_5",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 4,
+        "TilePosY": 5,
+        "TileType": "Object",
+        "isTileSpawnPoint": "",
+        "TID": 104000028
+    },
+    {
+        "ID": "FieldGroup_1_5_5",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 5,
+        "TilePosY": 5,
+        "TileType": "Object",
+        "isTileSpawnPoint": "",
+        "TID": 104000029
+    },
+    {
+        "ID": "FieldGroup_1_6_5",
+        "FieldGroupID": "FieldGroup_1",
+        "TilePosX": 6,
+        "TilePosY": 5,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "isTileGoalPoint": true,
+        "TID": 104000030
+    },
+    {
+        "ID": "FieldGroup_2_1_1",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 1,
+        "TilePosY": 1,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "isTileGoalPoint": true,
+        "TID": 104000031
+    },
+    {
+        "ID": "FieldGroup_2_2_1",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 2,
+        "TilePosY": 1,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000032
+    },
+    {
+        "ID": "FieldGroup_2_3_1",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 3,
+        "TilePosY": 1,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000033
+    },
+    {
+        "ID": "FieldGroup_2_4_1",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 4,
+        "TilePosY": 1,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000034
+    },
+    {
+        "ID": "FieldGroup_2_5_1",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 5,
+        "TilePosY": 1,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000035
+    },
+    {
+        "ID": "FieldGroup_2_6_1",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 6,
+        "TilePosY": 1,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000036
+    },
+    {
+        "ID": "FieldGroup_2_1_2",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 1,
+        "TilePosY": 2,
+        "TileType": "Empty",
+        "isTileSpawnPoint": "",
+        "TID": 104000037
+    },
+    {
+        "ID": "FieldGroup_2_2_2",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 2,
+        "TilePosY": 2,
+        "TileType": "Object",
+        "isTileSpawnPoint": "",
+        "TID": 104000038
+    },
+    {
+        "ID": "FieldGroup_2_3_2",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 3,
+        "TilePosY": 2,
+        "TileType": "Object",
+        "isTileSpawnPoint": "",
+        "TID": 104000039
+    },
+    {
+        "ID": "FieldGroup_2_4_2",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 4,
+        "TilePosY": 2,
+        "TileType": "Object",
+        "isTileSpawnPoint": "",
+        "TID": 104000040
+    },
+    {
+        "ID": "FieldGroup_2_5_2",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 5,
+        "TilePosY": 2,
+        "TileType": "Object",
+        "isTileSpawnPoint": "",
+        "TID": 104000041
+    },
+    {
+        "ID": "FieldGroup_2_6_2",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 6,
+        "TilePosY": 2,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000042
+    },
+    {
+        "ID": "FieldGroup_2_1_3",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 1,
+        "TilePosY": 3,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000043
+    },
+    {
+        "ID": "FieldGroup_2_2_3",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 2,
+        "TilePosY": 3,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000044
+    },
+    {
+        "ID": "FieldGroup_2_3_3",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 3,
+        "TilePosY": 3,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000045
+    },
+    {
+        "ID": "FieldGroup_2_4_3",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 4,
+        "TilePosY": 3,
+        "TileType": "Empty",
+        "isTileSpawnPoint": "",
+        "TID": 104000046
+    },
+    {
+        "ID": "FieldGroup_2_5_3",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 5,
+        "TilePosY": 3,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000047
+    },
+    {
+        "ID": "FieldGroup_2_6_3",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 6,
+        "TilePosY": 3,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000048
+    },
+    {
+        "ID": "FieldGroup_2_1_4",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 1,
+        "TilePosY": 4,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000049
+    },
+    {
+        "ID": "FieldGroup_2_2_4",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 2,
+        "TilePosY": 4,
+        "TileType": "Object",
+        "isTileSpawnPoint": "",
+        "TID": 104000050
+    },
+    {
+        "ID": "FieldGroup_2_3_4",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 3,
+        "TilePosY": 4,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000051
+    },
+    {
+        "ID": "FieldGroup_2_4_4",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 4,
+        "TilePosY": 4,
+        "TileType": "Object",
+        "isTileSpawnPoint": "",
+        "TID": 104000052
+    },
+    {
+        "ID": "FieldGroup_2_5_4",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 5,
+        "TilePosY": 4,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000053
+    },
+    {
+        "ID": "FieldGroup_2_6_4",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 6,
+        "TilePosY": 4,
+        "TileType": "Empty",
+        "isTileSpawnPoint": "",
+        "TID": 104000054
+    },
+    {
+        "ID": "FieldGroup_2_1_5",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 1,
+        "TilePosY": 5,
+        "TileType": "Monster",
+        "isTileSpawnPoint": true,
+        "TID": 104000055
+    },
+    {
+        "ID": "FieldGroup_2_2_5",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 2,
+        "TilePosY": 5,
+        "TileType": "Empty",
+        "isTileSpawnPoint": "",
+        "TID": 104000056
+    },
+    {
+        "ID": "FieldGroup_2_3_5",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 3,
+        "TilePosY": 5,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000057
+    },
+    {
+        "ID": "FieldGroup_2_4_5",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 4,
+        "TilePosY": 5,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000058
+    },
+    {
+        "ID": "FieldGroup_2_5_5",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 5,
+        "TilePosY": 5,
+        "TileType": "Monster",
+        "isTileSpawnPoint": "",
+        "TID": 104000059
+    },
+    {
+        "ID": "FieldGroup_2_6_5",
+        "FieldGroupID": "FieldGroup_2",
+        "TilePosX": 6,
+        "TilePosY": 5,
+        "TileType": "Empty",
+        "isTileSpawnPoint": "",
+        "TID": 104000060
+    }
+]

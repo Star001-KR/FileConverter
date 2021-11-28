@@ -1,4 +1,3 @@
-from FileConverter.Package.Data.excel import Excel
 from Package.Data.excel import *
 from Package.ValidateCheck.decorator import *
 

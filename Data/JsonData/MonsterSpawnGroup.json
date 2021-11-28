@@ -1,0 +1,146 @@
+[
+    {
+        "ID": "SpawnGroup_Battle_1_Normal1",
+        "ContentsID": "Battle",
+        "MonsterGroupType": "Normal",
+        "UseChapter": 1,
+        "GroupNameString": "MonGroupName_SpawnGroup_Battle_1_Normal1",
+        "TID": 107000001
+    },
+    {
+        "ID": "SpawnGroup_Battle_1_Normal2",
+        "ContentsID": "Battle",
+        "MonsterGroupType": "Normal",
+        "UseChapter": 1,
+        "GroupNameString": "MonGroupName_SpawnGroup_Battle_1_Normal2",
+        "TID": 107000002
+    },
+    {
+        "ID": "SpawnGroup_Battle_1_Normal3",
+        "ContentsID": "Battle",
+        "MonsterGroupType": "Normal",
+        "UseChapter": 1,
+        "GroupNameString": "MonGroupName_SpawnGroup_Battle_1_Normal3",
+        "TID": 107000003
+    },
+    {
+        "ID": "SpawnGroup_Battle_1_Normal4",
+        "ContentsID": "Battle",
+        "MonsterGroupType": "Normal",
+        "UseChapter": 1,
+        "GroupNameString": "MonGroupName_SpawnGroup_Battle_1_Normal4",
+        "TID": 107000004
+    },
+    {
+        "ID": "SpawnGroup_Battle_1_Boss1",
+        "ContentsID": "Battle",
+        "MonsterGroupType": "Boss",
+        "UseChapter": 1,
+        "GroupNameString": "MonGroupName_SpawnGroup_Battle_1_Boss1",
+        "TID": 107000005
+    },
+    {
+        "ID": "SpawnGroup_Battle_1_Boss2",
+        "ContentsID": "Battle",
+        "MonsterGroupType": "Boss",
+        "UseChapter": 1,
+        "GroupNameString": "MonGroupName_SpawnGroup_Battle_1_Boss2",
+        "TID": 107000006
+    },
+    {
+        "ID": "SpawnGroup_Battle_2_Normal1",
+        "ContentsID": "Battle",
+        "MonsterGroupType": "Normal",
+        "UseChapter": 2,
+        "GroupNameString": "MonGroupName_SpawnGroup_Battle_2_Normal1",
+        "TID": 107000007
+    },
+    {
+        "ID": "SpawnGroup_Battle_2_Normal2",
+        "ContentsID": "Battle",
+        "MonsterGroupType": "Normal",
+        "UseChapter": 2,
+        "GroupNameString": "MonGroupName_SpawnGroup_Battle_2_Normal2",
+        "TID": 107000008
+    },
+    {
+        "ID": "SpawnGroup_Battle_2_Boss1",
+        "ContentsID": "Battle",
+        "MonsterGroupType": "Boss",
+        "UseChapter": 2,
+        "GroupNameString": "MonGroupName_SpawnGroup_Battle_2_Boss1",
+        "TID": 107000009
+    },
+    {
+        "ID": "SpawnGroup_Battle_3_Normal1",
+        "ContentsID": "Battle",
+        "MonsterGroupType": "Normal",
+        "UseChapter": 3,
+        "GroupNameString": "MonGroupName_SpawnGroup_Battle_3_Normal1",
+        "TID": 107000010
+    },
+    {
+        "ID": "SpawnGroup_Battle_3_Normal2",
+        "ContentsID": "Battle",
+        "MonsterGroupType": "Normal",
+        "UseChapter": 3,
+        "GroupNameString": "MonGroupName_SpawnGroup_Battle_3_Normal2",
+        "TID": 107000011
+    },
+    {
+        "ID": "SpawnGroup_Battle_3_Boss1",
+        "ContentsID": "Battle",
+        "MonsterGroupType": "Boss",
+        "UseChapter": 3,
+        "GroupNameString": "MonGroupName_SpawnGroup_Battle_3_Boss1",
+        "TID": 107000012
+    },
+    {
+        "ID": "SpawnGroup_Battle_4_Normal1",
+        "ContentsID": "Battle",
+        "MonsterGroupType": "Normal",
+        "UseChapter": 4,
+        "GroupNameString": "MonGroupName_SpawnGroup_Battle_4_Normal1",
+        "TID": 107000013
+    },
+    {
+        "ID": "SpawnGroup_Battle_4_Normal2",
+        "ContentsID": "Battle",
+        "MonsterGroupType": "Normal",
+        "UseChapter": 4,
+        "GroupNameString": "MonGroupName_SpawnGroup_Battle_4_Normal2",
+        "TID": 107000014
+    },
+    {
+        "ID": "SpawnGroup_Battle_4_Boss1",
+        "ContentsID": "Battle",
+        "MonsterGroupType": "Boss",
+        "UseChapter": 4,
+        "GroupNameString": "MonGroupName_SpawnGroup_Battle_4_Boss1",
+        "TID": 107000015
+    },
+    {
+        "ID": "SpawnGroup_Battle_5_Normal1",
+        "ContentsID": "Battle",
+        "MonsterGroupType": "Normal",
+        "UseChapter": 5,
+        "GroupNameString": "MonGroupName_SpawnGroup_Battle_5_Normal1",
+        "TID": 107000016
+    },
+    {
+        "ID": "SpawnGroup_Battle_5_Normal2",
+        "ContentsID": "Battle",
+        "MonsterGroupType": "Normal",
+        "UseChapter": 5,
+        "GroupNameString": "MonGroupName_SpawnGroup_Battle_5_Normal2",
+        "TID": 107000017
+    },
+    {
+        "ID": "SpawnGroup_Battle_5_Boss1",
+        "ContentsID": "Battle",
+        "MonsterGroupType": "Boss",
+        "UseChapter": 5,
+        "GroupNameString": "MonGroupName_SpawnGroup_Battle_5_Boss1",
+        "TID": 107000018
+    }
+]
