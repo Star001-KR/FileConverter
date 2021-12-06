@@ -5,7 +5,8 @@
         "jsonDirectory":                "Data/JsonData/",
         "toolConfigDirectory":          "Config/config.json",
         "validationDirectory":          "Config/validationconfig.yml",
-        "logs":                         "Logs/"
+        "logs":                         "Logs/",
+        "guisettingDirectory":          "Config/guisetting.json"
     },
 
     "windows": 
@@ -14,6 +15,7 @@
         "jsonDirectory":                "Data\\JsonData\\",
         "toolConfigDirectory":          "Config\\config.json",
         "validationDirectory":          "Config\\validationconfig.yml",
-        "logs":                         "Logs\\"
+        "logs":                         "Logs\\",
+        "guisettingDirectory":          "Config\\guisetting.json"
     }
 }
