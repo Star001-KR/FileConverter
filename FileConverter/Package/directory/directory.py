@@ -6,6 +6,7 @@ class EDirectory(Enum):
     toolConfigDirectory = auto()
     validationDirectory = auto()
     logs = auto()
+    guisettingDirectory = auto()
 
 
 class FileConverterDirectory():

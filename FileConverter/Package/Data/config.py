@@ -15,10 +15,14 @@ class EValidationConfigType(Enum):
     value_size_compare = auto()
 
 
-def Get_ConfigTypeName(configType):
-    assert type(configType) == EConfigType or type(configType) == EValidationConfigType, 'err : wrong param data type input.'
+class EGuiSettingType(Enum):
+    main_screen = auto()
 
-    configEnum = (type(configType) == EConfigType) and EConfigType or EValidationConfigType
+
+def Get_ConfigTypeName(configType):
+    assert type(configType) == EConfigType or type(configType) == EValidationConfigType or type(configType) == EGuiSettingType, 'err : wrong param data type input.'
+
+    configEnum = type(configType)
 
     for member in configEnum:
         if configType == member:
@@ -87,3 +91,25 @@ def Get_ConifgFromYaml(configType, yamlPath):
         configSet = file_yaml[configTypeName]
 
     return configSet
+
+
+@deco_usedirmethod(EDirectory.guisettingDirectory)
+def Get_GuiSettingFromJson(configType, configCategory, jsonPath):
+    assert (type(configType) == EGuiSettingType), 'err : wrong param data type input.'
+
+    configTypeName = Get_ConfigTypeName(configType)
+    
+    with open (jsonPath) as file:
+        file_json = json.load(file)
+        configSet = file_json[configTypeName]
+    
+    # if want return all config in config type input magic keyword 'all (or All)' at configCategory param.
+    if configCategory == 'all' or configCategory == 'All':
+        return configSet
+
+    else:
+        for config in configSet:
+            if config == configCategory:
+                return configSet[config]
+
+    assert (False), 'err : input wrong config category.'

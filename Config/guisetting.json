@@ -1,0 +1,9 @@
+{
+    "main_screen": {
+        "title": "File Converter",
+        "geometry_x": 900,
+        "geometry_y": 500,
+        "resizeable_x": 1,
+        "resizable_y": 0
+    }
+}
