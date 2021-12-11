@@ -18,7 +18,7 @@ class MainScreen():
         self._lastPageNumber = 0
         
         
-    # Field Group : Excel Files.
+    # Frame Group : Excel Files.
         self.FG_EXCEL_FILES = LabelFrame(window, text = 'Excel Files')
         self.FG_EXCEL_FILES.grid(row = 0, column = 0)
 
@@ -29,3 +29,29 @@ class MainScreen():
         # Frame : Pages.
         self.frame_pages = Frame(self.FG_EXCEL_FILES)
         self.frame_pages.grid(row = 1, column = 0)
+
+
+    # Frame Group : Logs.
+        self.FG_LOGS = LabelFrame(window, text = 'Logs')
+        self.FG_LOGS.grid(row = 0, column = 1)
+
+        # Frame : Log Text.
+        self.frame_logText = Frame(self.FG_LOGS)
+        self.frame_logText.grid(row = 0, column = 0)
+
+
+    # Frame Group : Buttons.
+        self.FG_BUTTONS = LabelFrame(window, text = 'Buttons')
+        self.FG_BUTTONS.grid(row = 0, column = 2)
+
+        # Frame : Run All
+        self.frame_runAll = LabelFrame(self.FG_BUTTONS, text = 'Run All')
+        self.frame_runAll.grid(row = 0, column = 0)
+
+        # Frame : Validate Check
+        self.frame_valiCheck = LabelFrame(self.FG_BUTTONS, text = 'Validate Check')
+        self.frame_valiCheck.grid(row = 1, column = 0)
+
+        # Frame : File Convert
+        self.frame_fileConvert = LabelFrame(self.FG_BUTTONS, text = 'File Convert')
+        self.frame_fileConvert.grid(row = 2, column = 0)
