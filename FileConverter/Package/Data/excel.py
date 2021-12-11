@@ -16,9 +16,6 @@ class Excel():
         self._allExcelDataDict = self.Init_DataListFromExcel()
     
 
-    def test(self):
-        return self._allExcelDataDict
-
     @deco_usedirmethod(EDirectory.excelDirectory)
     def Init_DataListFromExcel(self, excelDir):
         def get_excelSheetDataDict(excelDir, targetSheetName):
