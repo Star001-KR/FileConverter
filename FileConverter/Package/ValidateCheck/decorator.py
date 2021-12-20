@@ -3,6 +3,23 @@ from Package.Data.config import *
 import asyncio
 import glob
 
+
+class ErrCount():
+    allErrorCount = 0
+
+    @classmethod
+    def Init_ErrorCount(cls):
+        cls.allErrorCount = 0
+
+    @classmethod
+    def Add_ErrCount(cls, count):
+        cls.allErrorCount += count
+
+    @classmethod
+    def Get_ErrCount(cls):
+        return cls.allErrorCount
+
+
 def deco_validatelog(validate_func):
     def Write_StartLog(checkTypeStr):
         Write_Log(ELogTpye.normal, '----------------------------------------------------------------')
@@ -10,8 +27,11 @@ def deco_validatelog(validate_func):
 
 
     def Write_EndLog(checkTypeStr, errorCount):
+        global allErrorCount
+
         Write_Log(ELogTpye.normal, f'Complete Validate Check : {__CheckType_checkTypeStr(checkTypeStr)}')
         if errorCount:
+            ErrCount.Add_ErrCount(errorCount)
             Write_Log(ELogTpye.warning, f'(Find {errorCount} Error(s).)')
 
 

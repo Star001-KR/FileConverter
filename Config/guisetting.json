@@ -4,6 +4,8 @@
         "geometry_x": 900,
         "geometry_y": 500,
         "resizeable_x": 1,
-        "resizable_y": 0
+        "resizable_y": 0,
+        "buttonsize_width" : 16,
+        "buttonsize_height" : 2
     }
 }

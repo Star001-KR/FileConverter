@@ -7,6 +7,8 @@ class MainScreen():
     geometry = (Get_GuiSettingFromJson(EGuiSettingType.main_screen, 'geometry_x'), Get_GuiSettingFromJson(EGuiSettingType.main_screen, 'geometry_y'))
     resizable = (bool(Get_GuiSettingFromJson(EGuiSettingType.main_screen, 'resizeable_x')), bool(Get_GuiSettingFromJson(EGuiSettingType.main_screen, 'resizable_y')))
 
+    buttonSize = (Get_GuiSettingFromJson(EGuiSettingType.main_screen, 'buttonsize_width'), Get_GuiSettingFromJson(EGuiSettingType.main_screen, 'buttonsize_height'))
+
     def __init__(self, window : Tk):
         # window default ui setting initalize.
         window.title(self.title)
@@ -47,6 +49,9 @@ class MainScreen():
         # Frame : Run All
         self.frame_runAll = LabelFrame(self.FG_BUTTONS, text = 'Run All')
         self.frame_runAll.grid(row = 0, column = 0)
+
+        self.btn_runAll = Button(self.frame_runAll, text = 'Run All', width = self.buttonSize[0], height = self.buttonSize[1], command = press_btn_runAll)
+        self.btn_runAll.grid(row = 0, column = 0)
 
         # Frame : Validate Check
         self.frame_valiCheck = LabelFrame(self.FG_BUTTONS, text = 'Validate Check')
