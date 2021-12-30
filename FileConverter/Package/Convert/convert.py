@@ -7,13 +7,8 @@ import os
 
 class Convert(Excel):
     def __init__(self):
-        self._targetSheetName = Get_ConfigFromJson(EConfigType.excel, 'targetSheetName')
-        self._columnNameNum = Get_ConfigFromJson(EConfigType.excel, 'columnNameNum')
-        self._columnTypeNum = Get_ConfigFromJson(EConfigType.excel, 'columnTypeNum')
-        self._keyColumnName = Get_ConfigFromJson(EConfigType.excel, 'keyColumnName')
+        super().__init__()
         
-        self._allExcelDataDict = self.Init_DataListFromExcel()
-
         self._dataIdDict = Get_ConfigFromJson(EConfigType.data_id, 'all')
         self._lastTidDict = Get_ConfigFromJson(EConfigType.last_tid, 'all')
         self._dataNameList = Get_ConfigKeyList(EConfigType.data_id)
