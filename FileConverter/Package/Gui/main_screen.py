@@ -1,4 +1,5 @@
 from Package.Gui.gui_func import *
+from Package.Convert.convert import *
 from tkinter import *
 
 class MainScreen():
@@ -19,44 +20,50 @@ class MainScreen():
         self._lookPageNumber = 1
         self._lastPageNumber = 0
         
+        self.convert = Convert()
         
     # Frame Group : Excel Files.
-        self.FG_EXCEL_FILES = LabelFrame(window, text = 'Excel Files')
+        self.FG_EXCEL_FILES = LabelFrame(window, text = 'Excel List')
         self.FG_EXCEL_FILES.grid(row = 0, column = 0)
 
         # Frame : Excel List.
-        self.frame_excelList = LabelFrame(self.FG_EXCEL_FILES, text = f'Excel List ({self._lookPageNumber} Page.)')
+        self.frame_excelList = Frame(self.FG_EXCEL_FILES)
         self.frame_excelList.grid(row = 0, column = 0)
+
+        self.check_excelList = []
+        self.checkExcelDict = {}
+        for listNum in range(0, len(self.convert.Get_AllExcelList())):
+            self.checkExcelDict[self.convert.Get_AllExcelList()[listNum]] = IntVar()
+            self.check_excelList.append(Checkbutton(self.frame_excelList, text = self.convert.Get_AllExcelList()[listNum],
+                                                    variable = self.checkExcelDict[self.convert.Get_AllExcelList()[listNum]]))
+            self.check_excelList[listNum].grid(row = listNum, column = 0, sticky = 'w')
 
         # Frame : Pages.
         self.frame_pages = Frame(self.FG_EXCEL_FILES)
         self.frame_pages.grid(row = 1, column = 0)
 
 
-    # Frame Group : Logs.
-        self.FG_LOGS = LabelFrame(window, text = 'Logs')
-        self.FG_LOGS.grid(row = 0, column = 1)
-
-        # Frame : Log Text.
-        self.frame_logText = Frame(self.FG_LOGS)
-        self.frame_logText.grid(row = 0, column = 0)
-
-
     # Frame Group : Buttons.
         self.FG_BUTTONS = LabelFrame(window, text = 'Buttons')
-        self.FG_BUTTONS.grid(row = 0, column = 2)
-
-        # Frame : Run All
-        self.frame_runAll = LabelFrame(self.FG_BUTTONS, text = 'Run All')
-        self.frame_runAll.grid(row = 0, column = 0)
-
-        self.btn_runAll = Button(self.frame_runAll, text = 'Run All', width = self.buttonSize[0], height = self.buttonSize[1], command = press_btn_runAll)
-        self.btn_runAll.grid(row = 0, column = 0)
-
-        # Frame : Validate Check
-        self.frame_valiCheck = LabelFrame(self.FG_BUTTONS, text = 'Validate Check')
-        self.frame_valiCheck.grid(row = 1, column = 0)
+        self.FG_BUTTONS.grid(row = 0, column = 1)
 
         # Frame : File Convert
-        self.frame_fileConvert = LabelFrame(self.FG_BUTTONS, text = 'File Convert')
-        self.frame_fileConvert.grid(row = 2, column = 0)
+        self.frame_fileConvert = Frame(self.FG_BUTTONS)
+        self.frame_fileConvert.grid(row = 0, column = 0)
+
+        self.btn_fileConvert = Button(self.frame_fileConvert, text = 'File Convert', width = self.buttonSize[0], height = self.buttonSize[1], command = lambda : press_btn_fileConvert(self.checkExcelDict))
+        self.btn_fileConvert.grid(row = 0, column = 0)
+
+        # Frame : Validate Check
+        self.frame_valiCheck = Frame(self.FG_BUTTONS)
+        self.frame_valiCheck.grid(row = 0, column = 1)
+        
+        self.btn_validateCheck = Button(self.frame_valiCheck, text = 'Validate Check', width = self.buttonSize[0], height = self.buttonSize[1], command = press_btn_validateCheck)
+        self.btn_validateCheck.grid(row = 0, column = 0)
+
+        # Frame : Run All
+        self.frame_runAll = Label(self.FG_BUTTONS)
+        self.frame_runAll.grid(row = 1, column = 0, columnspan = 2)
+        
+        self.btn_runAll = Button(self.frame_runAll, text = 'Run All', width = self.buttonSize[0] * 2 + 2, height = self.buttonSize[1], command = press_btn_runAll)
+        self.btn_runAll.grid(row = 0, column = 0)
